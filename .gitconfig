@@ -1,0 +1,11 @@
+[user]
+name = Matej Urbas
+email = matej.urbas@gmail.com
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	fa = fetch --all --prune
+	br = branch
+[core]
+	autocrlf = input
