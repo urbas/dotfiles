@@ -10,6 +10,3 @@ PROGRAMMING_DIR=$HOME/programming
 alias n="cd $PROGRAMMING_DIR/nest"
 alias p="cd $PROGRAMMING_DIR"
 alias dotfiles="git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME"
-
-#alias gsta="git stash"
-#alias gst="git status"
