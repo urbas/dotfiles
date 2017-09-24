@@ -1,5 +1,8 @@
 export EDITOR=vim
 
+export LC_CTYPE="en_GB.UTF-8"
+export LANG="en_GB.UTF-8"
+
 RIDER_BIN_DIR=$HOME/bin/rider-latest/bin
 IDEA_BIN_DIR=$HOME/bin/idea-latest/bin
 NODE_BIN_DIR=$HOME/bin/node-latest/bin
