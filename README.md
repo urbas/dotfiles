@@ -1,7 +1,7 @@
 # Setup
 
 ```bash
-sudo apt-get install -y zsh && \
+sudo apt-get install -y zsh git && \
   chsh -s `which zsh`  && \
   git clone --bare git@bitbucket.org:urbas/my-dotfiles.git .my-dotfiles && \
   git --git-dir=.my-dotfiles --work-tree=$HOME reset . && \
