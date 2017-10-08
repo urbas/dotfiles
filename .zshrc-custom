@@ -7,7 +7,9 @@ RIDER_BIN_DIR=$HOME/bin/rider-latest/bin
 IDEA_BIN_DIR=$HOME/bin/idea-latest/bin
 NODE_BIN_DIR=$HOME/bin/node-latest/bin
 
-export PATH=$NODE_BIN_DIR:$IDEA_BIN_DIR:$RIDER_BIN_DIR:$PATH
+export GOROOT=$HOME/bin/go-latest
+
+export PATH=$GOROOT/bin:$NODE_BIN_DIR:$IDEA_BIN_DIR:$RIDER_BIN_DIR:$PATH
 
 PROGRAMMING_DIR=$HOME/programming
 
