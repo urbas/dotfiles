@@ -3,15 +3,17 @@ export EDITOR=vim
 export LC_CTYPE="en_GB.UTF-8"
 export LANG="en_GB.UTF-8"
 
+PROGRAMMING_DIR=$HOME/programming
+
 RIDER_BIN_DIR=$HOME/bin/rider-latest/bin
 IDEA_BIN_DIR=$HOME/bin/idea-latest/bin
 NODE_BIN_DIR=$HOME/bin/node-latest/bin
 
 export GOROOT=$HOME/bin/go-latest
+export GOBIN=$HOME/bin/gobin
+export GOPATH=$PROGRAMMING_DIR/gopath
 
-export PATH=$GOROOT/bin:$NODE_BIN_DIR:$IDEA_BIN_DIR:$RIDER_BIN_DIR:$PATH
-
-PROGRAMMING_DIR=$HOME/programming
+export PATH=$GOBIN:$GOROOT/bin:$NODE_BIN_DIR:$IDEA_BIN_DIR:$RIDER_BIN_DIR:$PATH
 
 # Frequent directories aliases
 alias n="cd $PROGRAMMING_DIR/nest"

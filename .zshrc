@@ -10,7 +10,7 @@ export ZSH=$HOME/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status time context dir virtualenv pyenv rbenv vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status time virtualenv pyenv rbenv context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator background_jobs)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
