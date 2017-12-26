@@ -9,3 +9,5 @@ email = matej.urbas@gmail.com
 	br = branch
 [core]
 	autocrlf = input
+[merge]
+	tool = vimdiff
