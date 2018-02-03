@@ -8,12 +8,13 @@ PROGRAMMING_DIR=$HOME/programming
 RIDER_BIN_DIR=$HOME/bin/rider-latest/bin
 IDEA_BIN_DIR=$HOME/bin/idea-latest/bin
 NODE_BIN_DIR=$HOME/bin/node-latest/bin
+GRADLE_BIN_DIR=$HOME/bin/gradle-latest/bin
 
 export GOROOT=$HOME/bin/go-latest
 export GOBIN=$HOME/bin/gobin
 export GOPATH=$PROGRAMMING_DIR/gopath
 
-export PATH=$GOBIN:$GOROOT/bin:$NODE_BIN_DIR:$IDEA_BIN_DIR:$RIDER_BIN_DIR:$PATH
+export PATH=$GOBIN:$GOROOT/bin:$NODE_BIN_DIR:$IDEA_BIN_DIR:$RIDER_BIN_DIR:$GRADLE_BIN_DIR:$PATH
 
 # Frequent directories aliases
 alias n="cd $PROGRAMMING_DIR/nest"
@@ -25,5 +26,6 @@ alias gaip="git add -ip"
 
 # Host aliases
 alias pi1="ssh pi@pi1.urbas.si -p 57500"
+alias local-pi1="ssh pi@192.168.1.6 -p 57500"
 alias pi2="ssh pi@pi2.urbas.si -p 57501"
 alias pizw1="ssh pi@pizw1.urbas.si -p 57502"
