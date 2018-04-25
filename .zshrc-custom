@@ -9,12 +9,13 @@ RIDER_BIN_DIR=$HOME/bin/rider-latest/bin
 IDEA_BIN_DIR=$HOME/bin/idea-latest/bin
 NODE_BIN_DIR=$HOME/bin/node-latest/bin
 GRADLE_BIN_DIR=$HOME/bin/gradle-latest/bin
+MONGODB_BIN=$HOME/bin/mongodb-latest/bin
 
 export GOROOT=$HOME/bin/go-latest
 export GOBIN=$HOME/bin/gobin
 export GOPATH=$PROGRAMMING_DIR/gopath
 
-export PATH=$GOBIN:$GOROOT/bin:$NODE_BIN_DIR:$IDEA_BIN_DIR:$RIDER_BIN_DIR:$GRADLE_BIN_DIR:$PATH
+export PATH=$MONGODB_BIN:$GOBIN:$GOROOT/bin:$NODE_BIN_DIR:$IDEA_BIN_DIR:$RIDER_BIN_DIR:$GRADLE_BIN_DIR:$PATH
 
 # Frequent directories aliases
 alias n="cd $PROGRAMMING_DIR/nest"
