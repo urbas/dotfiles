@@ -11,3 +11,5 @@ email = matej.urbas@gmail.com
 	autocrlf = input
 [merge]
 	tool = vimdiff
+[push]
+	default = simple
