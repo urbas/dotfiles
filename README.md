@@ -9,3 +9,5 @@ sudo apt-get install -y zsh git && \
   git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME checkout $HOME && \
   git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME submodule update --recursive --init
 ```
+
+Also install [these fonts](https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf).
