@@ -10,4 +10,4 @@ sudo apt-get install -y zsh git && \
   git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME submodule update --recursive --init
 ```
 
-Also install [these fonts](https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf).
+Change the fonts of your terminal to `Inconsolata for Powerline` (the fonts should be already installed).
