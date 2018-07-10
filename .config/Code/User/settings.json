@@ -10,5 +10,7 @@
     "[json]": {
         "editor.tabSize": 2
     },
-    "workbench.statusBar.visible": false
+    "workbench.statusBar.visible": false,
+    "telemetry.enableTelemetry": false,
+    "editor.folding": false
 }
