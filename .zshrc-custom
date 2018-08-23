@@ -13,7 +13,7 @@ MONGODB_BIN=$HOME/bin/mongodb-latest/bin
 
 export GOROOT=$HOME/bin/go-latest
 export GOBIN=$HOME/bin/gobin
-export GOPATH=$PROGRAMMING_DIR/gopath
+export GOPATH=$PROGRAMMING_DIR/go
 
 export PATH=$MONGODB_BIN:$GOBIN:$GOROOT/bin:$NODE_BIN_DIR:$IDEA_BIN_DIR:$RIDER_BIN_DIR:$GRADLE_BIN_DIR:$PATH
 
