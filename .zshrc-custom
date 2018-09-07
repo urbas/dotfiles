@@ -22,5 +22,5 @@ alias p="cd $PROGRAMMING_DIR"
 
 # General aliases
 alias dotfiles="git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME"
-alias gaip="gaip"
+alias gaip="ga -ip"
 
