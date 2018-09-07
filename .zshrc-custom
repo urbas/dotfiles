@@ -22,10 +22,5 @@ alias p="cd $PROGRAMMING_DIR"
 
 # General aliases
 alias dotfiles="git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME"
-alias gaip="git add -ip"
+alias gaip="gaip"
 
-# Host aliases
-alias pi1="ssh pi@pi1.urbas.si -p 57500"
-alias local-pi1="ssh pi@192.168.1.6 -p 57500"
-alias pi2="ssh pi@pi2.urbas.si -p 57501"
-alias pizw1="ssh pi@pizw1.urbas.si -p 57502"
