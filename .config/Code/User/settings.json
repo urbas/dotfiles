@@ -12,5 +12,6 @@
     },
     "workbench.statusBar.visible": false,
     "telemetry.enableTelemetry": false,
-    "editor.folding": false
+    "editor.folding": false,
+    "breadcrumbs.enabled": true
 }
