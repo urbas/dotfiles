@@ -14,8 +14,3 @@ alias p="cd $PROGRAMMING_DIR"
 # General aliases
 alias dotfiles="git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME"
 alias gaip="ga -ip"
-
-# Node version manager
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
