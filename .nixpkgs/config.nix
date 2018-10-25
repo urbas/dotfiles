@@ -3,7 +3,11 @@
   rec {
     homeEnv = pkgs.buildEnv {
       name = "homeEnv";
-      paths = [ pkgs.bat ];
+      paths = [
+        pkgs.bat
+        pkgs.htop
+        pkgs.fzf
+      ];
     };
   };
 }

@@ -8,8 +8,8 @@ PROGRAMMING_DIR=$HOME/programming
 export PATH=$PATH
 
 # Nix
-# Install with: sudo mkdir /nix && sudo chown mat:mat /nix && sh <(curl https://nixos.org/nix/install) --no-daemon
-. /home/mat/.nix-profile/etc/profile.d/nix.sh
+. $HOME/.nix-profile/etc/profile.d/nix.sh
+. $HOME/.nix-profile/share/fzf/key-bindings.zsh
 alias nixup="nix-env -i homeEnv"
 alias nixed="vim $HOME/.nixpkgs/config.nix"
 
