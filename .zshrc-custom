@@ -10,6 +10,8 @@ export PATH=$PATH
 # Nix
 # Install with: sudo mkdir /nix && sudo chown mat:mat /nix && sh <(curl https://nixos.org/nix/install) --no-daemon
 . /home/mat/.nix-profile/etc/profile.d/nix.sh
+alias nixup="nix-env -i homeEnv"
+alias nixed="vim $HOME/.nixpkgs/config.nix"
 
 # Frequent directories aliases
 alias n="cd $PROGRAMMING_DIR/nest"
