@@ -5,8 +5,10 @@
       name = "homeEnv";
       paths = [
         pkgs.bat
-        pkgs.htop
+        pkgs.fd
         pkgs.fzf
+        pkgs.gitAndTools.diff-so-fancy
+        pkgs.htop
       ];
     };
   };
