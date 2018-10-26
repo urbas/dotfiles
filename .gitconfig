@@ -9,6 +9,7 @@ email = matej.urbas@gmail.com
 	br = branch
 [core]
 	autocrlf = input
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [merge]
 	tool = vimdiff
 [push]

@@ -21,3 +21,6 @@ alias p="cd $PROGRAMMING_DIR"
 alias dotfiles="git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME"
 alias gaip="ga -ip"
 alias rmrf="rm -rf"
+
+# Better cli
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
