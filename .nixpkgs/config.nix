@@ -12,6 +12,7 @@
         pkgs.htop
         pkgs.ncdu
         pkgs.tldr
+        pkgs.tmux
       ];
     };
   };
