@@ -10,7 +10,7 @@ export PATH=$PATH
 # Nix
 . $HOME/.nix-profile/etc/profile.d/nix.sh
 . $HOME/.nix-profile/share/fzf/key-bindings.zsh
-alias nixup="nix-env -i homeEnv"
+alias nixup="nix-env -i homeEnv && nix-env --delete-generations old"
 alias nixed="vim $HOME/.nixpkgs/config.nix"
 
 # Frequent directories aliases
