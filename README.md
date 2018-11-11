@@ -13,3 +13,16 @@ sudo apt-get install -y zsh git && \
 ```
 
 Change the fonts of your terminal to `Inconsolata for Powerline` (the fonts should be already installed).
+
+# Troubleshooting
+
+## How to change desktop shortcuts not configurable via Settings in ubuntu?
+Via dconf-editor (under `org.gnome.desktop.wm.keybindings`).
+
+Install dconf-editor and run it:
+```
+sudo apt install -y dconf-editor
+dconf-editor
+```
+
+Answer from here: https://askubuntu.com/a/997267
