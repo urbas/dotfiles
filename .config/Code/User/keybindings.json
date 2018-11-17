@@ -64,5 +64,9 @@
     "key": "alt+c",
     "command": "-toggleSearchCaseSensitive",
     "when": "searchViewletFocus && searchViewletVisible && !fileMatchOrFolderMatchFocus"
+  },
+  {
+    "key": "ctrl+g r",
+    "command": "git.revertSelectedRanges"
   }
 ]
