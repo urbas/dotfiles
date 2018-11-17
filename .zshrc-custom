@@ -9,7 +9,6 @@ export PATH=$PATH
 
 # Nix
 . $HOME/.nix-profile/etc/profile.d/nix.sh
-. $HOME/.nix-profile/share/fzf/key-bindings.zsh
 alias nixup="nix-env -i homeEnv && nix-env --delete-generations old"
 alias nixed="vim $HOME/.nixpkgs/config.nix"
 
@@ -23,4 +22,20 @@ alias gaip="ga -ip"
 alias rmrf="rm -rf"
 
 # Better cli
-alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+if [ -x "$(which ncdu)" ]; then
+  alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+fi
+
+if [ -x "$(which bat)" ]; then
+  alias cat="bat"
+fi
+
+if [ -x "$(which fd)" ]; then
+  alias find="fd"
+fi
+
+export FZF_DEFAULT_COMMAND='fd --hidden --follow --exclude .git --exclude .cache'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND --type f"
+export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
+
+. $HOME/.nix-profile/share/fzf/key-bindings.zsh

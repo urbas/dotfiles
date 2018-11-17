@@ -1,0 +1,68 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "ctrl+alt+z",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+alt+right",
+    "command": "workbench.action.navigateForward"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "-workbench.action.navigateForward"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "workbench.action.terminal.toggleFindCaseSensitive",
+    "when": "terminalFindWidgetFocused"
+  },
+  {
+    "key": "alt+c",
+    "command": "-workbench.action.terminal.toggleFindCaseSensitive",
+    "when": "terminalFindWidgetFocused"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "workbench.action.terminal.toggleFindCaseSensitiveTerminalFocus",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+c",
+    "command": "-workbench.action.terminal.toggleFindCaseSensitiveTerminalFocus",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "toggleFindCaseSensitive",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+c",
+    "command": "-toggleFindCaseSensitive",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "toggleSearchCaseSensitive",
+    "when": "searchViewletFocus && searchViewletVisible && !fileMatchOrFolderMatchFocus"
+  },
+  {
+    "key": "alt+c",
+    "command": "-toggleSearchCaseSensitive",
+    "when": "searchViewletFocus && searchViewletVisible && !fileMatchOrFolderMatchFocus"
+  }
+]
