@@ -68,5 +68,9 @@
   {
     "key": "ctrl+g r",
     "command": "git.revertSelectedRanges"
+  },
+  {
+    "key": "ctrl+shift+g v",
+    "command": "toggle.diff.renderSideBySide"
   }
 ]

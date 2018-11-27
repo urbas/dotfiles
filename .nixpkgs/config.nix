@@ -9,10 +9,12 @@
         pkgs.fzf
         pkgs.gitAndTools.diff-so-fancy
         pkgs.htop
+        pkgs.jq
         pkgs.ncdu
         pkgs.ripgrep
         pkgs.tldr
         pkgs.tmux
+        pkgs.xclip
       ];
     };
   };

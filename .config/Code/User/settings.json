@@ -13,5 +13,8 @@
     "workbench.statusBar.visible": false,
     "telemetry.enableTelemetry": false,
     "editor.folding": false,
-    "breadcrumbs.enabled": true
+    "breadcrumbs.enabled": true,
+    "gitlens.mode.active": "zen",
+    "diffEditor.renderSideBySide": true,
+    "editor.renderWhitespace": "all"
 }

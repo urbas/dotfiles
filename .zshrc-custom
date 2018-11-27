@@ -12,6 +12,12 @@ export PATH=$PATH
 alias nixup="nix-env -i homeEnv && nix-env --delete-generations old"
 alias nixed="vim $HOME/.nixpkgs/config.nix"
 
+function nixupg() {
+  nix-channel --update nixpkgs
+  nix-env -u '*'
+  nixup
+}
+
 # Frequent directories aliases
 alias n="cd $PROGRAMMING_DIR/nest"
 alias p="cd $PROGRAMMING_DIR"
@@ -19,7 +25,8 @@ alias p="cd $PROGRAMMING_DIR"
 # General aliases
 alias dotfiles="git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME"
 alias gaip="ga -ip"
-alias rmrf="rm -rf"
+alias c="xclip -selection clipboard"
+alias v="xclip -selection clipboard -o"
 
 # Better cli
 if [ -x "$(which ncdu)" ]; then
