@@ -15,6 +15,7 @@
         pkgs.tldr
         pkgs.tmux
         pkgs.xclip
+        pkgs.yq
       ];
     };
   };

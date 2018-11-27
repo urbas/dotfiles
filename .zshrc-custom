@@ -28,6 +28,10 @@ alias gaip="ga -ip"
 alias c="xclip -selection clipboard"
 alias v="xclip -selection clipboard -o"
 
+function yqs() {
+  yq -y $@ | bat -l yaml
+}
+
 # Better cli
 if [ -x "$(which ncdu)" ]; then
   alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
