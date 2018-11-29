@@ -8,6 +8,7 @@
         pkgs.fd
         pkgs.fzf
         pkgs.gitAndTools.diff-so-fancy
+        pkgs.go
         pkgs.htop
         pkgs.jq
         pkgs.ncdu
