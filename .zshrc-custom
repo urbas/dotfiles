@@ -8,9 +8,11 @@ PROGRAMMING_DIR=$HOME/programming
 export PATH=$PATH
 
 # Nix
-. $HOME/.nix-profile/etc/profile.d/nix.sh
-alias nixup="nix-env -i homeEnv && nix-env --delete-generations old"
-alias nixed="vim $HOME/.nixpkgs/config.nix"
+if [ -f $HOME/.nix-profile/etc/profile.d/nix.sh ]; then
+  . $HOME/.nix-profile/etc/profile.d/nix.sh
+  alias nixup="nix-env -i homeEnv && nix-env --delete-generations old"
+  alias nixed="vim $HOME/.nixpkgs/config.nix"
+fi
 
 function nixupg() {
   nix-channel --update nixpkgs
@@ -49,4 +51,6 @@ export FZF_DEFAULT_COMMAND='fd --hidden --follow --exclude .git --exclude .cache
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND --type f"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
 
-. $HOME/.nix-profile/share/fzf/key-bindings.zsh
+if [ -f $HOME/.nix-profile/share/fzf/key-bindings.zsh ]; then
+  . $HOME/.nix-profile/share/fzf/key-bindings.zsh
+fi
