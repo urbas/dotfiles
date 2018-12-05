@@ -30,7 +30,7 @@ alias gaip="ga -ip"
 alias c="xclip -selection clipboard"
 alias v="xclip -selection clipboard -o"
 
-function yqs() {
+function yqh() {
   yq -y $@ | bat -l yaml
 }
 
@@ -53,4 +53,11 @@ export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
 
 if [ -f $HOME/.nix-profile/share/fzf/key-bindings.zsh ]; then
   . $HOME/.nix-profile/share/fzf/key-bindings.zsh
+fi
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
 fi
