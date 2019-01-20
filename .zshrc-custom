@@ -30,12 +30,12 @@ alias gaip="ga -ip"
 alias c="xclip -selection clipboard"
 alias v="xclip -selection clipboard -o"
 
-function yqs() {
+function yqh() {
   yq -y $@ | bat -l yaml
 }
 
 # Better cli
-if [ -x "$(which ncdu)" ]; then
+if [ -x "$(which $HOME/.nix-profile/bin/ncdu)" ]; then
   alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 fi
 
