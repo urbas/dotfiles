@@ -5,8 +5,6 @@ export LANG="en_GB.UTF-8"
 
 PROGRAMMING_DIR=$HOME/programming
 
-export PATH=$PATH
-
 # Nix
 if [ -f $HOME/.nix-profile/etc/profile.d/nix.sh ]; then
   . $HOME/.nix-profile/etc/profile.d/nix.sh
