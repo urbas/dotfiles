@@ -16,5 +16,6 @@
     "breadcrumbs.enabled": true,
     "gitlens.mode.active": "zen",
     "diffEditor.renderSideBySide": true,
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+    "window.zoomLevel": 0
 }
