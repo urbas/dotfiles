@@ -35,7 +35,7 @@ function yqh() {
 }
 
 # Better cli
-if [ -x "$(which ncdu)" ]; then
+if [ -x $HOME/.nix-profile/bin/ncdu ]; then
   alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 fi
 

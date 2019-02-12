@@ -30,3 +30,11 @@ dconf-editor
 ```
 
 Answer from here: https://askubuntu.com/a/997267
+
+## Ctrl+Shift+e starts weird emoji typing
+You can unset this with:
+```
+ibus-setup
+```
+
+Look for emoji and delete the shortcut.
