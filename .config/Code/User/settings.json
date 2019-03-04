@@ -17,5 +17,7 @@
     "gitlens.mode.active": "zen",
     "diffEditor.renderSideBySide": true,
     "editor.renderWhitespace": "all",
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "terraform.codelens.enabled": false,
+    "terraform.telemetry.enabled": false
 }
