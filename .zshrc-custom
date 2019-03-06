@@ -29,7 +29,11 @@ alias c="xclip -selection clipboard"
 alias v="xclip -selection clipboard -o"
 
 function yqh() {
-  yq -y $@ | bat -l yaml
+  if [ $# -gt 0 ]; then
+    yq -y $@ | bat -l yaml
+  else
+    yq -y '.' | bat -l yaml
+  fi
 }
 
 # Better cli
