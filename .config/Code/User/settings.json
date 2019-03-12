@@ -19,5 +19,8 @@
     "editor.renderWhitespace": "all",
     "window.zoomLevel": 0,
     "terraform.codelens.enabled": false,
-    "terraform.telemetry.enabled": false
+    "terraform.telemetry.enabled": false,
+    "files.associations": {
+        ".zshrc*": "shellscript"
+    }
 }
