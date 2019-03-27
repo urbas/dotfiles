@@ -15,6 +15,7 @@
         pkgs.ripgrep
         pkgs.tldr
         pkgs.tmux
+        pkgs.travis
         pkgs.xclip
         pkgs.yq
       ];

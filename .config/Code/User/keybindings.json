@@ -112,5 +112,9 @@
   {
     "key": "alt+left",
     "command": "workbench.action.terminal.focusPrevious"
+  },
+  {
+    "key": "alt+shift",
+    "command": "workbench.action.toggleMultiCursorModifier"
   }
 ]
