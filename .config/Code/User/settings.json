@@ -12,8 +12,8 @@
     },
     "workbench.statusBar.visible": true,
     "telemetry.enableTelemetry": false,
-    "editor.folding": false,
-    "breadcrumbs.enabled": false,
+    "editor.folding": true,
+    "breadcrumbs.enabled": true,
     "gitlens.mode.active": "zen",
     "diffEditor.renderSideBySide": true,
     "editor.renderWhitespace": "all",
@@ -22,5 +22,6 @@
     "terraform.telemetry.enabled": false,
     "files.associations": {
         ".zshrc*": "shellscript"
-    }
+    },
+    "workbench.tree.renderIndentGuides": "always"
 }
