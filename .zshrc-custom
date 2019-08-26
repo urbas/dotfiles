@@ -46,10 +46,6 @@ function yqh() {
 }
 
 # Better cli
-if [ -x $HOME/.nix-profile/bin/ncdu ]; then
-  alias ncdu="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
-fi
-
 if [ -x "$(which bat)" ]; then
   alias cat="bat"
 fi

@@ -6,4 +6,4 @@
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule ".pyenv"]
 	path = .pyenv
-	url = git@github.com:pyenv/pyenv.git
+	url = https://github.com/pyenv/pyenv.git
