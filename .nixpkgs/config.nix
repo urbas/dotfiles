@@ -14,7 +14,6 @@
           pkgs.htop
           pkgs.jq
           pkgs.ncdu
-          pkgs.nix
           pkgs.ripgrep
           pkgs.tldr
           pkgs.tmux
