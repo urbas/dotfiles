@@ -42,5 +42,5 @@ Look for emoji and delete the shortcut.
 
 # How to build nix for Raspbian on an amd64 Linux?
 ```bash
-nix-build --no-out-link "<nixpkgs>" -A pkgsCross.armv7l-hf-multiplatform.nix
+nix-build --no-out-link "<nixpkgs>" -A pkgsCross.raspberryPi.nix
 ```
