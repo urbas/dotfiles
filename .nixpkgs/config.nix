@@ -14,6 +14,7 @@
           htop
           jq
           ncdu
+          nix
           ripgrep
           tldr
           tmux
