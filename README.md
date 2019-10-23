@@ -42,11 +42,5 @@ Look for emoji and delete the shortcut.
 
 # How to build nix for Raspbian on an amd64 Linux?
 ```bash
-nix-build --no-out-link "<nixpkgs>" -A pkgsCross.raspberryPi.nix
-```
-The above doesn't compile Rust correctly.
-
-This seems to do the trick:
-```bash
-nix-build '<nixpkgs>' --arg crossSystem '{ config = "arm-unknown-linux-gnueabihf"; }' -A pkgs.fd
+nix-build '<nixpkgs>' --arg crossSystem '{ config = "arm-unknown-linux-gnueabihf"; }' -A pkgs.nix
 ```
