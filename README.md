@@ -40,7 +40,7 @@ ibus-setup
 
 Look for emoji and delete the shortcut.
 
-# How to build nix for Raspbian on an amd64 Linux?
+## How to build nix for Raspbian on an amd64 Linux?
 Use the `feature/armv7l-crosscompile` branch of the nixpkgs repo with this command:
 ```bash
 nix-build . --arg crossSystem '{ config = "armv7l-unknown-linux-gnueabihf"; }' -A pkgs.nix
