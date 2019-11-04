@@ -46,3 +46,9 @@ Use `nixpkgs` that contains [my ARMv7l bugfix](https://github.com/NixOS/nixpkgs/
 NIX_PATH=nixpkgs=<YOUR CLONE> nix-build --arg crossSystem '{ config = "armv7l-unknown-linux-gnueabihf"; }' -A pkgs.nix
 ```
 Rsync the resulting package to the Pi.
+
+If you don't have a user environment, try doing this:
+```bash
+export PATH=/nix/store/k4c30by6r3ygczkzklkycafjdmd8mx08-nix-2.3.1/bin:$PATH
+nix-env -f $HOME/.nixpkgs/matej.nix -vi matejConfig.homeEnv
+```

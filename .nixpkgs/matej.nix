@@ -7,4 +7,5 @@ in rec {
   inherit (nixpkgs) pkgs lib;
 
   matejConfig = import ./config.nix;
+  inherit (matejConfig.packageOverrides pkgs) homeEnv;
 }
