@@ -10,7 +10,6 @@
           gitAndTools.diff-so-fancy
           gitAndTools.gitFull
           glibcLocales
-          go
           htop
           jq
           ncdu
