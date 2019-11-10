@@ -15,7 +15,7 @@ function nix-update-locale() {
 
 if [ -f $HOME/.nix-profile/etc/profile.d/nix.sh ]; then
   . $HOME/.nix-profile/etc/profile.d/nix.sh
-  alias nixup="nix-env -i homeEnv && nix-env --delete-generations old"
+  alias nixup="nix-env -f '<matej>' -i homeEnv && nix-env -f '<matej>' --delete-generations old"
   nix-update-locale
 fi
 
