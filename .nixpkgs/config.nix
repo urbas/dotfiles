@@ -11,6 +11,7 @@
           gitAndTools.gitFull
           glibcLocales
           htop
+          hyperfine
           jq
           ncdu
           nix
