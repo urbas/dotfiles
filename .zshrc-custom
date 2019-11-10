@@ -19,13 +19,6 @@ if [ -f $HOME/.nix-profile/etc/profile.d/nix.sh ]; then
   nix-update-locale
 fi
 
-function nixupg() {
-  nix-channel --update nixpkgs
-  nix-env -u '*'
-  nixup
-  nix-update-locale
-}
-
 # Frequent directories aliases
 alias n="cd $PROGRAMMING_DIR/nest"
 alias p="cd $PROGRAMMING_DIR"
