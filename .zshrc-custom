@@ -1,10 +1,3 @@
-export EDITOR=vim
-
-export LC_CTYPE="en_GB.UTF-8"
-export LANG="$LC_CTYPE"
-export LANGUAGE="$LC_CTYPE"
-export LC_ALL="$LC_CTYPE"
-
 PROGRAMMING_DIR=$HOME/programming
 
 # Nix
