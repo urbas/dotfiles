@@ -1,6 +1,6 @@
 let
   nixpkgsSrc = builtins.fetchTarball {
-    url = "https://github.com/urbas/nixpkgs/archive/a6f9c53a4b4d275b60f3d52b1bc22bb29fd48db8.tar.gz";
+    url = "https://github.com/urbas/nixpkgs/archive/d81a65468059169536db7b27dca1fac0659c03e8.tar.gz";
   };
 in rec {
   nixpkgs = (import "${nixpkgsSrc}") {};
