@@ -43,7 +43,7 @@ export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
 if [ -f $HOME/.nix-profile/share/fzf/key-bindings.zsh ]; then
   . $HOME/.nix-profile/share/fzf/key-bindings.zsh
 
-  # CTRL-Z - select and checkout a git branch
+  # Select and checkout a git branch
   fzf-branches-widget() {
     local selected
     setopt localoptions noglobsubst noposixbuiltins pipefail 2> /dev/null
@@ -58,7 +58,7 @@ if [ -f $HOME/.nix-profile/share/fzf/key-bindings.zsh ]; then
     return $ret
   }
   zle     -N   fzf-branches-widget
-  bindkey '^Z' fzf-branches-widget
+  bindkey '^V' fzf-branches-widget
 fi
 
 # pyenv
