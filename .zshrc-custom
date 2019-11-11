@@ -47,8 +47,8 @@ if [ -f $HOME/.nix-profile/share/fzf/key-bindings.zsh ]; then
   fzf-branches-widget() {
     local selected
     setopt localoptions noglobsubst noposixbuiltins pipefail 2> /dev/null
-    selected=($(git branch | grep -v '*' |
-      FZF_DEFAULT_OPTS="--height ${FZF_TMUX_HEIGHT:-40%} $FZF_DEFAULT_OPTS -n2..,.. --tiebreak=index --bind=ctrl-r:toggle-sort $FZF_CTRL_R_OPTS --query=${(qqq)LBUFFER} +m" $(__fzfcmd)))
+    selected=( $(fd -t d -d 1 . ~/programming -x bash -c "git -C {} branch 2> /dev/null | grep -v 'detached' | sed -E 's,^[[:space:]]*\*?,{} ,'" |
+      FZF_DEFAULT_OPTS="--height ${FZF_TMUX_HEIGHT:-40%} $FZF_DEFAULT_OPTS -n2..,.. --tiebreak=index --bind=ctrl-r:toggle-sort $FZF_CTRL_R_OPTS --query=${(qqq)LBUFFER} +m" $(__fzfcmd)) )
     local ret=$?
     if [ -n "$selected" ]; then
       git checkout ${selected[1]}
