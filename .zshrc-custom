@@ -22,6 +22,7 @@ alias dotfiles="git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME"
 alias gaip="ga -ip"
 alias c="xclip -selection clipboard"
 alias v="xclip -selection clipboard -o"
+alias rf="rm -rf"
 
 function yqh() {
   if [ $# -gt 0 ]; then
