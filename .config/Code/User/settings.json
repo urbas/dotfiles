@@ -23,5 +23,8 @@
     "files.associations": {
         ".zshrc*": "shellscript"
     },
-    "workbench.tree.renderIndentGuides": "always"
+    "workbench.tree.renderIndentGuides": "always",
+    "terminal.integrated.rendererType": "experimentalWebgl",
+    "diffEditor.ignoreTrimWhitespace": true,
+    "explorer.openEditors.visible": 0,
 }
