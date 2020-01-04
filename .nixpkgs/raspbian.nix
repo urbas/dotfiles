@@ -3,7 +3,7 @@
 let
   nixpkgsSrc = builtins.fetchTarball {
     # This rev comes from branch `raspbian-support`: https://github.com/urbas/nixpkgs/tree/raspbian-support
-    url = "https://github.com/urbas/nixpkgs/archive/b27830ef352c037613e82b0bc97a9dbbebb29336.tar.gz";
+    url = "https://github.com/urbas/nixpkgs/archive/4bb0f6c84a61215d141c04e4369f6ad1185582d8.tar.gz";
   };
 in rec {
   nixpkgs = (import "${nixpkgsSrc}") {};
