@@ -2,8 +2,8 @@
   packageOverrides = pkgs:
     let
       python = pkgs.python3;
-      pythonPackages = python.pythonPackages;
-      
+      pythonPackages = python.pkgs;
+
       philips-air-purifier = pythonPackages.buildPythonPackage (with pythonPackages; rec {
         pname = "philips-air-purifier";
         version = "0.0.4";
