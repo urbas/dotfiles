@@ -7,9 +7,6 @@
       philips-air-purifier = pythonPackages.buildPythonPackage (with pythonPackages; rec {
         pname = "philips-air-purifier";
         version = "0.0.5";
-        checkPhase = ''
-          pytest tests
-        '';
         checkInputs = [ pytest pytestrunner pytestcov ];
         propagatedBuildInputs = [ pycryptodome requests ];
         src = fetchPypi {
