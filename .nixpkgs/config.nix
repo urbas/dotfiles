@@ -7,7 +7,7 @@
       philips-air-purifier = pythonPackages.buildPythonPackage (with pythonPackages; rec {
         pname = "philips-air-purifier";
         version = "0.0.4";
-        checkInputs = [ pytest pytest-runner ];
+        checkInputs = [ pytest pytestrunner ];
         propagatedBuildInputs = [ pycryptodome requests ];
         src = pythonPackages.fetchPypi {
           inherit pname version;
