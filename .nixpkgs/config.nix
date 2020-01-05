@@ -1,18 +1,21 @@
 {
   packageOverrides = pkgs:
     let
-      philips-air-purifier = pkgs.python3.pkgs.buildPythonPackage rec {
+      python = pkgs.python3;
+      pythonPackages = python.pythonPackages;
+      
+      philips-air-purifier = pythonPackages.buildPythonPackage (with pythonPackages; rec {
         pname = "philips-air-purifier";
         version = "0.0.4";
         checkInputs = [ pytest pytest-runner ];
         propagatedBuildInputs = [ pycryptodome requests ];
-        src = pkgs.python3.pkgs.fetchPypi {
+        src = pythonPackages.fetchPypi {
           inherit pname version;
           sha256 = "0c2l9k1fk2by5nkgjx7g3h96d9b6y2nf1z01aygba68bl8i9cvx9";
         };
-      };
+      });
 
-      py = pkgs.python3.withPackages(ps: with ps; [
+      py = python.withPackages(ps: with ps; [
         philips-air-purifier
       ]);
     in
