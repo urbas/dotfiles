@@ -15,7 +15,7 @@
         '';
         checkInputs = [ pytest pytestrunner pytestcov ];
         propagatedBuildInputs = [ pycryptodome requests ];
-        src = fetchFromGithub {
+        src = pkgs.fetchFromGithub {
           inherit pname version;
           owner = "urbas";
           repo = pname;
