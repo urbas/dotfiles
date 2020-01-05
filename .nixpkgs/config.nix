@@ -14,7 +14,7 @@
         propagatedBuildInputs = [ pycryptodome requests ];
         src = fetchPypi {
           inherit pname version;
-          sha256 = "000l9k1fk2by5nkgjx7g3h96d9b6y2nf1z01aygba68bl8i9cvx9";
+          sha256 = "1xw37sjph1cvdidr8mkk412kshs11271ri6ggsa63ajyz8839q9m";
         };
       });
 
