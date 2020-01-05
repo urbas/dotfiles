@@ -6,7 +6,7 @@
         version = "0.0.4";
         src = pkgs.python3.pkgs.fetchPypi {
           inherit pname version;
-          sha256 = "0000c9e5e7a16b6c88ba3088a9bfc82f7db8e13378be7c78d6c14a5f8ed05afd";
+          sha256 = "0c2l9k1fk2by5nkgjx7g3h96d9b6y2nf1z01aygba68bl8i9cvx9";
         };
       };
 
