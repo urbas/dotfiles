@@ -3,7 +3,7 @@
 let
   nixpkgsSrc = builtins.fetchTarball {
     # This rev comes from branch `unstable`: https://github.com/urbas/nixpkgs/tree/unstable
-    url = "https://github.com/urbas/nixpkgs/archive/39a340714b443cf7b7518711bff2b2f031a41ea1.tar.gz";
+    url = "https://github.com/urbas/nixpkgs/archive/ad0fa1fd3e87cb4981dd8716373e507e294324ac.tar.gz";
   };
 in rec {
   nixpkgs = (import "${nixpkgsSrc}") {};
