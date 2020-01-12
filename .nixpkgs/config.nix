@@ -34,7 +34,6 @@
             jq
             ncdu
             nix
-            py
             ripgrep
             tldr
             tmux
