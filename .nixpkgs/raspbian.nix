@@ -2,8 +2,9 @@
 # To build this, run the following: nix-env -f $HOME/.nixpkgs/raspbian.nix -vi homeEnv
 let
   nixpkgsSrc = builtins.fetchTarball {
-    # This rev comes from branch `unstable`: https://github.com/urbas/nixpkgs/tree/unstable
-    url = "https://github.com/urbas/nixpkgs/archive/ad0fa1fd3e87cb4981dd8716373e507e294324ac.tar.gz";
+    # This rev comes from branch `unstable` (based on upstream `nixpkgs-unstable` with some patches for
+    # raspbian and Ubuntu x86_64): https://github.com/urbas/nixpkgs/tree/unstable
+    url = "https://github.com/urbas/nixpkgs/archive/c246cf883cb0f013c93b5b6c0033f65147e28f86.tar.gz";
   };
 in rec {
   nixpkgs = (import "${nixpkgsSrc}") {};
