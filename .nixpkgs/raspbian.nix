@@ -4,7 +4,7 @@ let
   nixpkgsSrc = builtins.fetchTarball {
     # This rev comes from branch `unstable` (based on upstream `nixpkgs-unstable` with some patches for
     # raspbian and Ubuntu x86_64): https://github.com/urbas/nixpkgs/tree/unstable
-    url = "https://github.com/urbas/nixpkgs/archive/c246cf883cb0f013c93b5b6c0033f65147e28f86.tar.gz";
+    url = "https://github.com/urbas/nixpkgs/archive/53b2ee842f90ebe816d8a018b6e6bfa6d33a66e9.tar.gz";
   };
 in rec {
   nixpkgs = (import "${nixpkgsSrc}") {};

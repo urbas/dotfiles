@@ -5,13 +5,15 @@
       pythonPackages = python.pkgs;
 
       philips-air-purifier = pythonPackages.buildPythonPackage (with pythonPackages; rec {
-        pname = "philips-air-purifier";
+        name = "philips-air-purifier";
         version = "0.0.5";
-        checkInputs = [ pytest pytestrunner pytestcov ];
+        checkInputs = [ httmock pytest pytestrunner pytestcov ];
         propagatedBuildInputs = [ pycryptodome requests ];
-        src = fetchPypi {
-          inherit pname version;
-          sha256 = "1xw37sjph1cvdidr8mkk412kshs11271ri6ggsa63ajyz8839q9m";
+        src = pkgs.fetchFromGitHub {
+          owner = "urbas";
+          repo = name;
+          rev = "v${version}";
+          sha256 = "07hrb1p8m46cd5kmxxjz5if1nx8d5h65y3v7px5zpsizli0hdfn4";
         };
       });
 
@@ -34,6 +36,7 @@
             jq
             ncdu
             nix
+            py
             ripgrep
             tldr
             tmux
