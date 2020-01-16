@@ -12,7 +12,7 @@
         src = pkgs.fetchgit {
           url = "https://github.com/urbas/philips-air-purifier";
           rev = "687ab3a9a937cc2c672fb6e8059ddac2f55f43b6";
-          sha256 = "07hrb1p8m46cd5kmxxjz50000x8d5h65y3v7000zpsizli0hdfn4";
+          sha256 = "1ywc4vj5nixs1min8ayvm1qipphhgmsnwz7n4vn3qj0py1m25pk5";
         };
       });
 
