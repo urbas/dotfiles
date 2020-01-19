@@ -1,5 +1,5 @@
 # This expression uses a revision of nixpkgs that can build homeEnv on a Raspberry Pi running Raspbian
-# To build this, run the following: nix-env -f $HOME/.nixpkgs/raspbian.nix -vi homeEnv
+# To build this, run the following: nix-env -f $HOME/.nixpkgs/homeEnv.nix -vi homeEnv
 let
   nixpkgsSrc = builtins.fetchTarball {
     # This rev comes from branch `unstable` (based on upstream `nixpkgs-unstable` with some patches for
