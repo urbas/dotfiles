@@ -17,7 +17,9 @@
       });
 
       py = python.withPackages(ps: with ps; [
+        ipython
         philips-air-purifier
+        youtube-dl
       ]);
     in
       rec {
