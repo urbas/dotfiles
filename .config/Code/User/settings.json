@@ -14,7 +14,6 @@
     "telemetry.enableTelemetry": false,
     "editor.folding": true,
     "breadcrumbs.enabled": true,
-    "gitlens.mode.active": "zen",
     "diffEditor.renderSideBySide": true,
     "editor.renderWhitespace": "all",
     "window.zoomLevel": 0,
@@ -27,4 +26,5 @@
     "terminal.integrated.rendererType": "experimentalWebgl",
     "diffEditor.ignoreTrimWhitespace": true,
     "explorer.openEditors.visible": 0,
+    "gitlens.mode.active": "review",
 }
