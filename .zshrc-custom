@@ -7,12 +7,6 @@ if [ -f $NIX_HOME_ENV/etc/profile.d/nix.sh ]; then
   export LOCALE_ARCHIVE_2_27="$NIX_HOME_ENV/lib/locale/locale-archive"
 fi
 
-function nixupg() {
-  nix-channel --update nixpkgs
-  nix-env -u '*'
-  nixup
-}
-
 # Frequent directories aliases
 alias n="cd $PROGRAMMING_DIR/nest"
 alias p="cd $PROGRAMMING_DIR"
