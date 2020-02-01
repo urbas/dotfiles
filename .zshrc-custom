@@ -1,10 +1,10 @@
 PROGRAMMING_DIR=$HOME/programming
 
 # Nix
-if [ -f $HOME/.nix-profile/etc/profile.d/nix.sh ]; then
-  . $HOME/.nix-profile/etc/profile.d/nix.sh
-  alias nixup="nix-env -i home && nix-env --delete-generations old && nix-env -p /nix/var/nix/profiles/home --delete-generations old"
-  export LOCALE_ARCHIVE_2_27="$HOME/.nix-profile/lib/locale/locale-archive"
+if [ -f $NIX_HOME_ENV/etc/profile.d/nix.sh ]; then
+  . $NIX_HOME_ENV/etc/profile.d/nix.sh
+  alias nixup="/nix/var/nix/profiles/home/bin/nix-env -f ~/.nixpkgs -p /nix/var/nix/profiles/home -iA envs.home && nix-env -p /nix/var/nix/profiles/home --delete-generations old"
+  export LOCALE_ARCHIVE_2_27="$NIX_HOME_ENV/lib/locale/locale-archive"
 fi
 
 function nixupg() {
@@ -41,8 +41,8 @@ export FZF_DEFAULT_COMMAND='fd --hidden --follow --exclude .git --exclude .cache
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND --type f"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
 
-if [ -f $HOME/.nix-profile/share/fzf/key-bindings.zsh ]; then
-  . $HOME/.nix-profile/share/fzf/key-bindings.zsh
+if [ -f $NIX_HOME_ENV/share/fzf/key-bindings.zsh ]; then
+  . $NIX_HOME_ENV/share/fzf/key-bindings.zsh
 
   # Select and checkout a git branch
   fzf-branches-widget() {
