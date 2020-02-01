@@ -3,4 +3,4 @@ LC_CTYPE="en_GB.UTF-8"
 LANG="$LC_CTYPE"
 LANGUAGE="$LC_CTYPE"
 LC_ALL="$LC_CTYPE"
-NIX_PATH=matej=$HOME/.nixpkgs/matej.nix
+PATH=/nix/var/nix/profiles/home/bin:$PATH
