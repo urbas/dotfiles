@@ -3,7 +3,7 @@ PROGRAMMING_DIR=$HOME/programming
 # Nix
 if [ -f $NIX_HOME_ENV/etc/profile.d/nix.sh ]; then
   . $NIX_HOME_ENV/etc/profile.d/nix.sh
-  alias nixup="/nix/var/nix/profiles/home/bin/nix-env -f ~/.nixpkgs -p /nix/var/nix/profiles/home -iA envs.home && nix-env -p /nix/var/nix/profiles/home --delete-generations old"
+  alias nixup="nix-env -f ~/.nixpkgs -p /nix/var/nix/profiles/home -iA envs.home && nix-env -p /nix/var/nix/profiles/home --delete-generations old"
   export LOCALE_ARCHIVE_2_27="$NIX_HOME_ENV/lib/locale/locale-archive"
 fi
 
