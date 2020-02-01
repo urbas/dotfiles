@@ -8,10 +8,10 @@ let
     # Unstable nixpkgs:
     # url = "https://github.com/NixOs/nixpkgs-channels/archive/7184df6beb88c4f5f3186e5b73d5437a3461ceaf.tar.gz";
   };
-in rec {
-  nixpkgs = (import "${nixpkgsSrc}") {};
-  inherit (nixpkgs) pkgs lib;
-
-  matejConfig = import ./config.nix;
-  inherit (matejConfig.packageOverrides pkgs) homeEnv;
+  
+  inherit (import "${nixpkgsSrc}" {}) pkgs;
+in {
+  envs = {
+    home = import ./envs/home.nix { inherit pkgs; };
+  };
 }
