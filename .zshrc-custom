@@ -2,9 +2,22 @@ PROGRAMMING_DIR=$HOME/programming
 
 # Nix
 if [ -d $NIX_HOME_ENV ]; then
-  alias nixup="nix-env -f ~/.nixpkgs -p /nix/var/nix/profiles/home -iA envs.home && nix-env -p /nix/var/nix/profiles/home --delete-generations old"
   export LOCALE_ARCHIVE_2_27="$NIX_HOME_ENV/lib/locale/locale-archive"
 fi
+
+nus-all() {
+  (
+    set -e
+    nix-build ~/.nixpkgs $(nus-envs | xargs -n1 -I{} echo '-vA envs.{}')
+    nus-envs | xargs -P8 -n1 -I{} zsh -c 'nix-env -f ~/.nixpkgs -p /nix/var/nix/profiles/{} -iA envs.{} && nix-env -p /nix/var/nix/profiles/{} --delete-generations old'
+    nix-collect-garbage
+    nix-store --optimise
+  )
+}
+
+nus-envs() {
+  nix-instantiate ~/.nixpkgs -A envs 2> /dev/null | cut -d'-' -f2 | cut -d'.' -f1
+}
 
 # Frequent directories aliases
 alias n="cd $PROGRAMMING_DIR/nest"
