@@ -6,6 +6,7 @@ let
     # This rev comes from branch `unstable` (based on upstream `nixpkgs-unstable` with some patches for
     # raspbian and Ubuntu x86_64): https://github.com/urbas/nixpkgs/tree/unstable
     url = "https://github.com/urbas/nixpkgs/archive/urbas-2020-02-01.tar.gz";
+    sha256 = "173lx16cxabcxqhha82x9g2irzpx7hhbi3425q994zl0gwm9x6kf";
     # Unstable nixpkgs:
     # url = "https://github.com/NixOs/nixpkgs-channels/archive/7184df6beb88c4f5f3186e5b73d5437a3461ceaf.tar.gz";
   };
