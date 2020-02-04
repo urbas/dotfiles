@@ -13,6 +13,8 @@ let
   
   inherit (import "${nixpkgsSrc}" {}) pkgs;
 in {
+  inherit pkgs;
+
   envs = {
     home = import ./envs/home.nix { inherit pkgs; };
     nix = import ./envs/nix.nix { inherit pkgs; };
