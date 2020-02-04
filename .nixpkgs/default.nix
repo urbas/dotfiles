@@ -4,8 +4,8 @@ let
   nixpkgsSrc = builtins.fetchTarball {
     # This rev comes from branch `unstable` (based on upstream `nixpkgs-unstable` channel with some patches for
     # raspbian and Ubuntu x86_64): https://github.com/urbas/nixpkgs/tree/unstable
-    url = "https://github.com/urbas/nixpkgs/archive/urbas-2020-02-01.tar.gz";
-    sha256 = "173lx16cxabcxqhha82x9g2irzpx7hhbi3425q994zl0gwm9x6kf";
+    url = "https://github.com/urbas/nixpkgs/archive/urbas-2020-02-04.tar.gz";
+    sha256 = "1rfnqhkcyrdazi9l74i25ha74wc9r674n1s5acnsg59bas60yxwx";
   };
   
   inherit (import "${nixpkgsSrc}" {}) pkgs;
