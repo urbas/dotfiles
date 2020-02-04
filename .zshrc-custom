@@ -8,10 +8,10 @@ fi
 nus-all() {
   (
     set -e
-    nix-build ~/.nixpkgs $(nus-envs | xargs -n1 -I{} echo '-vA envs.{}')
+    time nix-build ~/.nixpkgs $(nus-envs | xargs -n1 -I{} echo '-vA envs.{}')
     nus-envs | xargs -P8 -n1 -I{} zsh -c 'nix-env -f ~/.nixpkgs -p /nix/var/nix/profiles/{} -iA envs.{} && nix-env -p /nix/var/nix/profiles/{} --delete-generations old'
-    nix-collect-garbage
-    nix-store --optimise
+    time nix-collect-garbage
+    time nix-store --optimise
   )
 }
 
