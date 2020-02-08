@@ -10,6 +10,7 @@ in
     name = "home";
     paths = with pkgs; [
       bat
+      docker-compose
       fd
       fzf
       gitAndTools.diff-so-fancy
