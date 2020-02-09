@@ -27,4 +27,5 @@
     "diffEditor.ignoreTrimWhitespace": true,
     "explorer.openEditors.visible": 0,
     "gitlens.mode.active": "review",
+    "files.trimTrailingWhitespace": true,
 }
