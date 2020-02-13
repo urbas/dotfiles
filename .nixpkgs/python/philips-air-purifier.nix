@@ -1,17 +1,18 @@
 { python3
-, fetchgit
+, fetchFromGitHub
 }:
 let
   pythonPackages = python3.pkgs;
 in
   pythonPackages.buildPythonPackage (with pythonPackages; rec {
     name = "philips-air-purifier";
-    version = "0.1.0";
+    version = "0.0.4";
     checkInputs = [ httmock pytest pytestrunner pytestcov ];
     propagatedBuildInputs = [ pycryptodome requests ];
-    src = fetchgit {
-      url = "https://github.com/urbas/${name}";
-      rev = "687ab3a9a937cc2c672fb6e8059ddac2f55f43b6";
-      sha256 = "1ywc4vj5nixs1min8ayvm1qipphhgmsnwz7n4vn3qj0py1m25pk5";
+    src = fetchFromGitHub {
+      owner = "urbas";
+      repo = name;
+      rev = "v${version}";
+      sha256 = "0h2asb3qd5mzjrv2c40bhrs06qf2sw48qn1xx4xgvc9fd7dw6ql9";
     };
   })
