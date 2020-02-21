@@ -28,4 +28,6 @@
     "explorer.openEditors.visible": 0,
     "gitlens.mode.active": "review",
     "files.trimTrailingWhitespace": true,
+    "search.searchOnType": false,
+    "files.autoSave": "afterDelay",
 }
