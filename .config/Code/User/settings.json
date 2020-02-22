@@ -29,5 +29,5 @@
     "gitlens.mode.active": "review",
     "files.trimTrailingWhitespace": true,
     "search.searchOnType": false,
-    "files.autoSave": "afterDelay",
+    "files.autoSave": "onFocusChange",
 }

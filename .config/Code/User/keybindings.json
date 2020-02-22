@@ -228,5 +228,25 @@
     "key": "ctrl+shift+alt+down",
     "command": "-editor.action.copyLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+g ctrl+c",
+    "command": "merge-conflict.accept.current"
+  },
+  {
+    "key": "ctrl+g ctrl+n",
+    "command": "merge-conflict.next"
+  },
+  {
+    "key": "ctrl+g ctrl+p",
+    "command": "merge-conflict.previous"
+  },
+  {
+    "key": "ctrl+g ctrl+b",
+    "command": "merge-conflict.accept.both"
+  },
+  {
+    "key": "ctrl+g ctrl+i",
+    "command": "merge-conflict.accept.incoming"
   }
 ]
