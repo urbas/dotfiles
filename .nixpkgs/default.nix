@@ -1,7 +1,7 @@
 # This expression uses a revision of nixpkgs that can build on a Raspberry Pi running Raspbian
 {
-  nixpkgsVersion ? "urbas-2020-02-04",
-  nixpkgsSha ? "1rfnqhkcyrdazi9l74i25ha74wc9r674n1s5acnsg59bas60yxwx"
+  nixpkgsVersion ? "urbas-2020-03-22",
+  nixpkgsSha ? "10k32gdbib378591c748104a0a713xkc4gj58b9b6l254b5albbi"
 }:
 let
   # nixpkgsSrc = /home/mat/programming/nixpkgs;
