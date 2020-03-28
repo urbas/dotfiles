@@ -30,4 +30,5 @@
     "files.trimTrailingWhitespace": true,
     "search.searchOnType": false,
     "files.autoSave": "onFocusChange",
+    "editor.columnSelection": false,
 }

@@ -170,7 +170,7 @@
     "when": "!editorFocus"
   },
   {
-    "key": "ctrl+e ctrl+o",
+    "key": "ctrl+shift+y ctrl+shift+o",
     "command": "workbench.action.closeOtherEditors",
     "when": "editorFocus"
   },
@@ -248,5 +248,25 @@
   {
     "key": "ctrl+g ctrl+i",
     "command": "merge-conflict.accept.incoming"
+  },
+  {
+    "key": "ctrl+shift+y ctrl+shift+t",
+    "command": "workbench.action.toggleEditorWidths"
+  },
+  {
+    "key": "ctrl+g ctrl+d",
+    "command": "gitlens.diffWithRevision"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "-workbench.view.debug"
+  },
+  {
+    "key": "ctrl+shift+y",
+    "command": "-workbench.debug.action.toggleRepl"
+  },
+  {
+    "key": "ctrl+shift+y ctrl+shift+p",
+    "command": "workbench.action.toggleMaximizedPanel"
   }
 ]
