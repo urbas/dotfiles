@@ -11,6 +11,7 @@ in
     paths = with pkgs; [
       bat
       docker-compose
+      entr
       fd
       fzf
       gitAndTools.diff-so-fancy
