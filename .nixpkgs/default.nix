@@ -1,16 +1,8 @@
-# This expression uses a revision of nixpkgs that can build on a Raspberry Pi running Raspbian
-{
-  nixpkgsVersion ? "urbas-2020-03-28",
-  nixpkgsSha ? "0yb3kmirldikz8384x08asw16ylbg7q0bxnhb52pdyxq57fkvz6y"
-}:
+{ ... }:
 let
-  # nixpkgsSrc = /home/mat/programming/nixpkgs;
   nixpkgsSrc = builtins.fetchTarball {
-    # This rev comes from branch `unstable` (based on upstream `nixpkgs-unstable` channel with some patches for
-    # Raspbian): https://github.com/urbas/nixpkgs/tree/unstable
-    # Check for updates at: https://github.com/NixOS/nixpkgs-channels/commits/nixpkgs-unstable
-    url = "https://github.com/urbas/nixpkgs/archive/${nixpkgsVersion}.tar.gz";
-    sha256 = nixpkgsSha;
+    url = "https://github.com/NixOS/nixpkgs-channels/archive/55668eb671b915b49bcaaeec4518cc49d8de0a99.tar.gz";
+    sha256 = "0b2mrrjsdpxpyvnv98dph5av3xjps1mbd87x8510mnc4pfa2zc8z";
   };
 
   inherit (import "${nixpkgsSrc}" {}) pkgs;
