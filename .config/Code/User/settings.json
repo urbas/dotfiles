@@ -1,8 +1,7 @@
 {
-    "editor.fontSize": 13,
+    "editor.fontSize": 12,
     "editor.minimap.enabled": false,
     "terminal.integrated.fontFamily": "Inconsolata for Powerline",
-    "terminal.integrated.fontSize": 14,
     "zenMode.centerLayout": false,
     "workbench.activityBar.visible": false,
     "window.menuBarVisibility": "hidden",
