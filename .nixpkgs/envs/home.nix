@@ -10,6 +10,7 @@ in
     name = "home";
     paths = with pkgs; [
       bat
+      direnv
       docker-compose
       entr
       fd
