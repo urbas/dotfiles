@@ -69,6 +69,6 @@ if [ -f $NIX_HOME_ENV/share/fzf/key-bindings.zsh ]; then
   bindkey '^V' fzf-branches-widget
 fi
 
-if [ -x $(which direnv) ]; then
+if [ -x "$(which direnv)" ]; then
   eval "$(direnv hook zsh)"
 fi
