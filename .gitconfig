@@ -14,3 +14,5 @@ email = matej.urbas@gmail.com
 	tool = vimdiff
 [push]
 	default = simple
+[pull]
+	ff = only
