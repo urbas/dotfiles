@@ -25,6 +25,7 @@ in
       nix
       py
       ripgrep
+      starship
       tldr
       tmux
       travis
