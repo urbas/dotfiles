@@ -6,6 +6,7 @@ export NVM_DIR="$HOME/.nvm"
 
 if [ -x $(which starship) ]; then
   eval "$(starship init zsh)"
+  source ~/.oh-my-zsh/lib/history.zsh
   source ~/.oh-my-zsh/lib/git.zsh
   source ~/.oh-my-zsh/plugins/git/git.plugin.zsh
 else
