@@ -5,8 +5,9 @@ export NVM_LAZY_LOAD=true
 export NVM_DIR="$HOME/.nvm"
 
 if [ -x $(which starship) ]; then
-  eval "$(starship init zsh)"
+  plugins=(git ssh-agent)
   source $ZSH/oh-my-zsh.sh
+  eval "$(starship init zsh)"
 else
   # If you come from bash you might have to change your $PATH.
   # export PATH=$HOME/bin:/usr/local/bin:$PATH
