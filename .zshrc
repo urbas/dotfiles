@@ -6,7 +6,7 @@ export NVM_DIR="$HOME/.nvm"
 
 if [ -x $(which starship) ]; then
   plugins=(git ssh-agent)
-  source $ZSH/oh-my-zsh.sh
+  source $HOME/.oh-my-zsh/oh-my-zsh.sh
   eval "$(starship init zsh)"
 else
   # If you come from bash you might have to change your $PATH.
