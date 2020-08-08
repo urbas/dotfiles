@@ -1,9 +1,3 @@
-# nvm - node version manager
-# export NVM_AUTO_USE=true
-export NVM_NO_USE=true
-export NVM_LAZY_LOAD=true
-export NVM_DIR="$HOME/.nvm"
-
 if [ -x $(which starship) ]; then
   plugins=(git ssh-agent)
   source $HOME/.oh-my-zsh/oh-my-zsh.sh

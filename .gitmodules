@@ -1,12 +1,3 @@
-[submodule ".powerlevel9k"]
-	path = .powerlevel9k
-	url = https://github.com/bhilburn/powerlevel9k.git
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule ".pyenv"]
-	path = .pyenv
-	url = https://github.com/pyenv/pyenv.git
-[submodule ".nvm"]
-	path = .nvm
-	url = https://github.com/nvm-sh/nvm.git
