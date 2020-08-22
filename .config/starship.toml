@@ -1,0 +1,9 @@
+[character]
+symbol = "%%"
+
+[time]
+disabled = false
+
+[hostname]
+ssh_only = false
+
