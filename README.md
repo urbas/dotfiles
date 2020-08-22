@@ -11,12 +11,6 @@ sudo apt-get install -y zsh git && \
   git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME submodule update --recursive --init
 ```
 
-Unfortunately, there is no nix binary dist for Raspberry Pi, so run this to install it on non-Raspberry Pi machines:
-```bash
-sudo mkdir -p /nix && sudo chown $USER:$USER /nix && sh <(curl https://nixos.org/nix/install) --no-daemon && \
-  (. /home/matej/.nix-profile/etc/profile.d/nix.sh; nix-env -i homeEnv)
-```
-
 Change the fonts of your terminal to `Inconsolata for Powerline` (the fonts should be already installed).
 
 # Troubleshooting
