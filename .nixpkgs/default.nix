@@ -10,7 +10,7 @@ in {
   inherit pkgs;
 
   envs = {
-    nix = pkgs.buildEnv { name = "nix"; paths = [ nixpkgsSrc ]; };
+    nix = pkgs.buildEnv { name = "nixpkgs-src"; paths = [ nixpkgsSrc ]; };
     home = import ./envs/home.nix { inherit pkgs; };
   };
 }

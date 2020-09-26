@@ -7,3 +7,7 @@ NIX_HOME_ENV=/nix/var/nix/profiles/home
 if echo $PATH | grep -qv $NIX_HOME_ENV/bin; then
   PATH=$NIX_HOME_ENV/bin:$PATH
 fi
+
+if [ -d /nix/var/nix/profiles/nix ]; then
+  NIX_PATH=nixpkgs=/nix/var/nix/profiles/nix
+fi
