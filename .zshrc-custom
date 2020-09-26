@@ -69,7 +69,7 @@ if [ -f $NIX_HOME_ENV/share/fzf/key-bindings.zsh ]; then
     return $ret
   }
   zle     -N   fzf-branches-widget
-  bindkey '^V' fzf-branches-widget
+  bindkey '^X' fzf-branches-widget
 fi
 
 if [ -x "$(which direnv)" ]; then
