@@ -12,5 +12,8 @@ in {
   envs = {
     nixpkgs-src = pkgs.buildEnv { name = "nixpkgs-src"; paths = [ nixpkgsSrc ]; };
     home = import ./envs/home.nix { inherit pkgs; };
+
+    # programming shell envs
+    vscode = pkgs.buildEnv { name = "vscode"; paths = with pkgs; [ nodejs yarn ]; };
   };
 }
