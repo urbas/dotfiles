@@ -23,7 +23,6 @@ in
       jq
       ncdu
       nix
-      nodejs
       py
       ripgrep
       starship
