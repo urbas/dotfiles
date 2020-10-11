@@ -4,7 +4,11 @@ LANG="$LC_CTYPE"
 LANGUAGE="$LC_CTYPE"
 LC_ALL="$LC_CTYPE"
 
-NIX_HOME_ENV=/nix/var/nix/profiles/home
+if [ -d /run/current-system/sw ]; then
+  NIX_HOME_ENV=/run/current-system/sw
+else
+  NIX_HOME_ENV=/nix/var/nix/profiles/home
+fi
 if test "${PATH#*$NIX_HOME_ENV/bin}" = "$PATH"; then
   PATH=$NIX_HOME_ENV/bin:$PATH
 fi
