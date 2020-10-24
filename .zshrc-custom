@@ -42,7 +42,7 @@ function yqh() {
 }
 
 # Better cli
-if [ -x "$(which bat)" ]; then
+if (( $+commands[bat] )); then
   alias cat="bat"
 fi
 
@@ -50,8 +50,8 @@ export FZF_DEFAULT_COMMAND='fd --hidden --follow --exclude .git --exclude .cache
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND --type f"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
 
-if [ -f $NIX_HOME_ENV/share/fzf/key-bindings.zsh ]; then
-  . $NIX_HOME_ENV/share/fzf/key-bindings.zsh
+if (( $+commands[fzf-share] )); then
+  . $(fzf-share)/key-bindings.zsh
 
   # Select and checkout a git branch
   fzf-branches-widget() {
@@ -72,6 +72,6 @@ if [ -f $NIX_HOME_ENV/share/fzf/key-bindings.zsh ]; then
   bindkey '^X' fzf-branches-widget
 fi
 
-if [ -x "$(which direnv)" ]; then
+if (( $+commands[direnv] )); then
   eval "$(direnv hook zsh)"
 fi
