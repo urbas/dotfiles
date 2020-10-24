@@ -57,7 +57,7 @@ if (( $+commands[fzf-share] )); then
   fzf-branches-widget() {
     local selected
     setopt localoptions noglobsubst noposixbuiltins pipefail 2> /dev/null
-    selected=( $(fd -t d -d 1 . ~/programming -x bash -c "git -C {} branch 2> /dev/null | sed -E 's,^\*(.*)$, \1 \o033[0;32m(current)\o033[0m,' | sed -E 's,^ ,\o033[0;34m{}\o033[0m,'" | grep -v 'HEAD detached' |
+    selected=( $(fd -t d --exact-depth 1 . ~/programming -x bash -c "git -C {} branch 2> /dev/null | sed -E 's,^\*(.*)$, \1 \o033[0;32m(current)\o033[0m,' | sed -E 's,^ ,\o033[0;34m{}\o033[0m,'" | grep -v 'HEAD detached' |
       FZF_DEFAULT_OPTS="--height ${FZF_TMUX_HEIGHT:-40%} $FZF_DEFAULT_OPTS --ansi -n2..,.. --tiebreak=index --bind=ctrl-r:toggle-sort $FZF_CTRL_R_OPTS --query=${(qqq)LBUFFER} +m" $(__fzfcmd)) )
     local ret=$?
     if [ -n "$selected" ]; then
