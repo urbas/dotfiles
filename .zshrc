@@ -2,7 +2,7 @@
 DISABLE_AUTO_UPDATE="true"
 plugins=(git ssh-agent)
 zstyle :omz:plugins:ssh-agent identities id_rsa
-source $HOME/.oh-my-zsh/oh-my-zsh.sh
+ZSH=$HOME/.oh-my-zsh source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
 # starship
 eval "$(starship init zsh)"
