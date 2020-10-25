@@ -30,6 +30,7 @@ in pkgs.buildEnv {
     travis
     xclip
     yq
+    vim
     zsh
   ];
 }
