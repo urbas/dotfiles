@@ -9,10 +9,19 @@ email = matej.urbas@gmail.com
 	br = branch
 [core]
 	autocrlf = input
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	pager = delta
+[interactive]
+    diffFilter = delta --color-only
 [merge]
 	tool = vimdiff
 [push]
 	default = simple
 [pull]
 	ff = only
+[delta]
+    features = side-by-side line-numbers decorations
+    whitespace-error-style = 22 reverse
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    file-decoration-style = none
