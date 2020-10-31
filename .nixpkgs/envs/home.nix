@@ -14,6 +14,7 @@ in pkgs.buildEnv {
     entr
     fd
     fzf
+    gitAndTools.delta
     gitAndTools.diff-so-fancy
     gitAndTools.gitFull
     glibcLocales
