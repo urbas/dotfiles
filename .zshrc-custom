@@ -69,7 +69,7 @@ if (( $+commands[fzf-share] )); then
     return $ret
   }
   zle     -N   fzf-branches-widget
-  bindkey '^X' fzf-branches-widget
+  bindkey '^Z' fzf-branches-widget
 fi
 
 if (( $+commands[direnv] )); then
