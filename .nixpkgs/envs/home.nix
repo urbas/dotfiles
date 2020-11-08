@@ -2,7 +2,6 @@
 let
   py = pkgs.python3.withPackages(ps: with ps; [
     ipython
-    (pkgs.callPackage ../python/philips-air-purifier.nix {})
     youtube-dl
   ]);
 in pkgs.buildEnv {
