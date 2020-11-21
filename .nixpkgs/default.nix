@@ -2,7 +2,11 @@
 let
   nixpkgsSrc = import ./nixpkgsSrc.nix;
 
-  inherit (import "${nixpkgsSrc}" {}) pkgs;
+  overlays = [
+    (import ./overlays/1-pkgs.nix)
+  ];
+
+  inherit (import "${nixpkgsSrc}" { inherit overlays; }) pkgs;
 in {
   inherit pkgs;
 
