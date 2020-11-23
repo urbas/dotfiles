@@ -3,7 +3,6 @@ let
   py = pkgs.python3.withPackages(ps: with ps; [
     black
     ipython
-    py-air-control-exporter
     youtube-dl
   ]);
 in pkgs.buildEnv {
