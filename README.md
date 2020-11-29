@@ -1,9 +1,11 @@
 # Setup
 
 ```bash
+# NB: use this remote if you don't have a GitHub account
+REMOTE=https://github.com/urbas/dotfiles.git
 sudo apt-get install -y zsh git && \
   chsh -s /bin/zsh  && \
-  ([ -d $HOME/.my-dotfiles ] || git clone --bare git@github.com:urbas/dotfiles.git $HOME/.my-dotfiles) && \
+  ([ -d $HOME/.my-dotfiles ] || git clone --bare ${REMOTE:-git@github.com:urbas/dotfiles.git} $HOME/.my-dotfiles) && \
   git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME fetch && \
   git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME reset $HOME && \
   git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME checkout $HOME && \
