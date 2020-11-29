@@ -13,6 +13,7 @@ in pkgs.buildEnv {
     docker-compose
     entr
     fd
+    file
     fzf
     gitAndTools.delta
     gitAndTools.gitFull
@@ -28,9 +29,9 @@ in pkgs.buildEnv {
     tldr
     tmux
     travis
+    vim
     xclip
     yq
-    vim
     zsh
   ];
 }
