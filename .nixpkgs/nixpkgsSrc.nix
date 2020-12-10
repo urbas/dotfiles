@@ -1,4 +1,4 @@
 builtins.fetchTarball {
-  url = "https://github.com/NixOS/nixpkgs/archive/a322b32e9d74fb476944ff6cfb55833dc69cfaaa.tar.gz";
-  sha256 = "1r0mkiqxija75spnyksmh8x5j4smnrxv5f7768s81gsl570kls0l";
+  url = "https://github.com/NixOS/nixpkgs/archive/e9158eca70ae59e73fae23be5d13d3fa0cfc78b4.tar.gz";
+  sha256 = "0cnmvnvin9ixzl98fmlm3g17l6w95gifqfb3rfxs55c0wj2ddy53";
 }
