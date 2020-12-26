@@ -1,16 +1,14 @@
-{ pkgs }:
+{ pkgs, extraPaths ? [] }:
 let
   py = pkgs.python3.withPackages(ps: with ps; [
     black
     ipython
-    youtube-dl
   ]);
 in pkgs.buildEnv {
   name = "home";
   paths = with pkgs; [
     bat
     direnv
-    docker-compose
     entr
     fd
     file
@@ -28,10 +26,9 @@ in pkgs.buildEnv {
     starship
     tldr
     tmux
-    travis
     vim
     xclip
     yq
     zsh
-  ];
+  ] ++ extraPaths;
 }
