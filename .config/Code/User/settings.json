@@ -31,4 +31,6 @@
     "search.searchOnType": false,
     "files.autoSave": "onFocusChange",
     "editor.columnSelection": false,
+    "python.showStartPage": false,
+    "editor.codeLens": false,
 }
