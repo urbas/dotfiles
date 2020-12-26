@@ -1,11 +1,10 @@
-{ pkgs, extraPaths ? [] }:
+{ pkgs }:
 let
   py = pkgs.python3.withPackages(ps: with ps; [
     black
     ipython
   ]);
-in pkgs.buildEnv {
-  name = "home";
+
   paths = with pkgs; [
     bat
     direnv
@@ -30,5 +29,13 @@ in pkgs.buildEnv {
     xclip
     yq
     zsh
-  ] ++ extraPaths;
+  ];
+
+in {
+  inherit paths;
+
+  env = pkgs.buildEnv {
+    name = "home";
+    inherit paths;
+  };
 }
