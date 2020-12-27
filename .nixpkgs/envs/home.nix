@@ -31,11 +31,8 @@ let
     zsh
   ];
 
-in {
+in pkgs.buildEnv {
+  name = "home";
   inherit paths;
-
-  env = pkgs.buildEnv {
-    name = "home";
-    inherit paths;
-  };
+  passthru.paths = paths;
 }
