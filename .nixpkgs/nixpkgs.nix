@@ -1,1 +1,1 @@
-{ ... }: import (import ./nixpkgsSrc.nix) {}
+{ ... }: import (import ./nixpkgs-src.nix) {}
