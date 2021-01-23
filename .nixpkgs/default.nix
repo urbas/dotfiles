@@ -11,7 +11,8 @@ in {
   inherit pkgs;
 
   envs = {
-    nixpkgs-src = pkgs.buildEnv { name = "nixpkgs-src"; paths = [ nixpkgs-src ]; };
     home = import ./envs/home.nix { inherit pkgs; };
+    nixos-config-dev = import ./envs/nixos-config-dev.nix { inherit pkgs; };
+    nixpkgs-src = pkgs.buildEnv { name = "nixpkgs-src"; paths = [ nixpkgs-src ]; };
   };
 }
