@@ -22,6 +22,7 @@ let
     nix
     py
     ripgrep
+    rustup
     starship
     tldr
     tmux
