@@ -16,14 +16,10 @@
     "breadcrumbs.enabled": true,
     "diffEditor.renderSideBySide": true,
     "editor.renderWhitespace": "all",
-    "window.zoomLevel": 0,
-    "terraform.codelens.enabled": false,
-    "terraform.telemetry.enabled": false,
     "files.associations": {
         ".zshrc*": "shellscript"
     },
     "workbench.tree.renderIndentGuides": "always",
-    "terminal.integrated.rendererType": "experimentalWebgl",
     "diffEditor.ignoreTrimWhitespace": true,
     "explorer.openEditors.visible": 0,
     "gitlens.mode.active": "review",
@@ -31,6 +27,22 @@
     "search.searchOnType": false,
     "files.autoSave": "onFocusChange",
     "editor.columnSelection": false,
-    "python.showStartPage": false,
     "editor.codeLens": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "editor.suggest.preview": true,
+    "files.exclude": {
+        "**/.devEnv": true,
+        "**/result*": true
+    },
+    "files.watcherExclude": {
+        "**/.devEnv": true,
+        "**/result*": true
+    },
+    "search.exclude": {
+        "**/.devEnv": true,
+        "**/result*": true
+    },
 }

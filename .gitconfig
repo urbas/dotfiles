@@ -10,6 +10,7 @@ email = matej.urbas@gmail.com
 [core]
 	autocrlf = input
 	pager = delta
+	excludesFile = ~/.gitignore
 [interactive]
     diffFilter = delta --color-only
 [merge]
