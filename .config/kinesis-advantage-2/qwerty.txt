@@ -1,0 +1,2 @@
+[intl-\]>[escape]
+[rwin]>[kp-lwin]
