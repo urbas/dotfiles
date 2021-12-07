@@ -24,6 +24,7 @@ let
     ripgrep
     rustup
     starship
+    tree
     tldr
     tmux
     vim
