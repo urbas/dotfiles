@@ -31,6 +31,7 @@ let
     xclip
     yq
     zsh
+    zstd
   ];
 
 in pkgs.buildEnv {
