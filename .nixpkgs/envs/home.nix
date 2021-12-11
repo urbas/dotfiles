@@ -20,13 +20,14 @@ let
     jq
     ncdu
     nix
+    oh-my-zsh
     py
     ripgrep
     rustup
     starship
-    tree
     tldr
     tmux
+    tree
     vim
     xclip
     yq
