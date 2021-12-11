@@ -9,8 +9,7 @@ sudo apt-get install -y zsh git && \
   git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME fetch && \
   git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME reset $HOME && \
   git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME checkout $HOME && \
-  git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME pull && \
-  git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME submodule update --recursive --init
+  git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME pull
 ```
 
 Change the fonts of your terminal to `Inconsolata for Powerline` (the fonts should be already installed).
