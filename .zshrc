@@ -1,3 +1,5 @@
+setopt inc_append_history
+
 # oh-my-zsh
 DISABLE_AUTO_UPDATE="true"
 plugins=(git ssh-agent)
