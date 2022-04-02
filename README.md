@@ -14,6 +14,12 @@ sudo apt-get install -y zsh git && \
 
 Change the fonts of your terminal to `Inconsolata for Powerline` (the fonts should be already installed).
 
+# Upgrade dev env
+
+Find the latest commit in the `nixos-unstable` branch: https://github.com/NixOS/nixpkgs/tree/nixos-unstable
+
+Then paste that commit into [./.nixpkgs/nixpkgs-src.nix](./.nixpkgs/nixpkgs-src.nix) and update the sha256.
+
 # Troubleshooting
 
 ## How to change desktop shortcuts not configurable via Settings in ubuntu?
