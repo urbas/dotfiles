@@ -1,15 +1,23 @@
 # Setup
 
+Prerequisites:
 ```bash
-# NB: use this remote if you don't have a GitHub account
-REMOTE=https://github.com/urbas/dotfiles.git
-sudo apt-get install -y zsh git && \
-  chsh -s /bin/zsh  && \
-  ([ -d $HOME/.my-dotfiles ] || git clone --bare ${REMOTE:-git@github.com:urbas/dotfiles.git} $HOME/.my-dotfiles) && \
-  git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME fetch && \
-  git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME reset $HOME && \
-  git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME checkout $HOME && \
+sudo apt-get install -y zsh git
+chsh -s /bin/zsh
+```
+
+Dotfiles setup:
+```bash
+# NB: use the https remote if you do not have a GitHub account
+(
+  set -ex
+  REMOTE=https://github.com/urbas/dotfiles.git
+  [ -d $HOME/.my-dotfiles ] || git clone --bare ${REMOTE:-git@github.com:urbas/dotfiles.git} $HOME/.my-dotfiles
+  git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME fetch
+  git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME reset $HOME
+  git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME checkout $HOME
   git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME pull
+)
 ```
 
 Change the fonts of your terminal to `Inconsolata for Powerline` (the fonts should be already installed).
