@@ -12,6 +12,7 @@ let
   '';
 
   paths = with pkgs; [
+    awscli
     bat
     direnv
     entr
