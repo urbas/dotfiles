@@ -11,7 +11,7 @@
         "editor.defaultFormatter": "vscode.json-language-features",
     },
     "workbench.statusBar.visible": true,
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     "editor.folding": true,
     "breadcrumbs.enabled": true,
     "diffEditor.renderSideBySide": true,
@@ -28,9 +28,6 @@
     "files.autoSave": "onFocusChange",
     "editor.columnSelection": false,
     "editor.codeLens": false,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
-    },
     "editor.bracketPairColorization.enabled": true,
     "editor.suggest.preview": true,
     "files.exclude": {
@@ -45,4 +42,5 @@
         "**/.devEnv": true,
         "**/result*": true
     },
+    "window.zoomLevel": -1,
 }
