@@ -2,13 +2,16 @@
 success_symbol = "[%](bold green)"
 error_symbol = "[%](bold red)"
 
-[time]
-disabled = false
-
-[hostname]
-ssh_only = false
+[directory]
+truncation_length = 0
 
 [git_status]
 ahead = "⇡${count}"
 diverged = "⇡${ahead_count}⇣${behind_count}"
 behind = "⇣${count}"
+
+[hostname]
+ssh_only = false
+
+[time]
+disabled = false
