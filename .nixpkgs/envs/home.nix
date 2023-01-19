@@ -30,7 +30,6 @@ let
     py
     ripgrep
     rustup
-    rust-analyzer
     starship
     tldr
     tmux
