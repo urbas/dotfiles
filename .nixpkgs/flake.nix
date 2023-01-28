@@ -8,7 +8,7 @@
 
     in forSupportedSystems ({ pkgs, system, ... }:
       let
-        homeEnv = import ./.nixpkgs/envs/home.nix { inherit pkgs; };
+        homeEnv = import ./envs/home.nix { inherit pkgs; };
         mkInputSourceCache = input: pkgs.runCommand "${baseNameOf (toString input)}" { } "mkdir $out && ln -s ${input} $out/$(basename ${input})";
         input-sources = map mkInputSourceCache [nixpkgs];
 
