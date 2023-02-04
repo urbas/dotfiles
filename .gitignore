@@ -2,3 +2,4 @@
 /result*
 /.devEnv
 /.direnv
+/.nixpkgs/.direnv
