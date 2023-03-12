@@ -295,5 +295,13 @@
     "key": "f5",
     "command": "-debug.openView",
     "when": "!debuggersAvailable"
+  },
+  {
+    "key": "ctrl+g o",
+    "command": "workbench.action.compareEditor.focusOtherSide"
+  },
+  {
+    "key": "ctrl+g ctrl+o",
+    "command": "workbench.action.compareEditor.focusOtherSide"
   }
 ]

@@ -40,8 +40,7 @@
     "**/.devEnv": true,
     "**/result*": true
   },
-  "window.zoomLevel": -1,
   "terminal.integrated.enableMultiLinePasteWarning": false,
-  "cSpell.enabled": false,
-  "rust-client.engine": "rust-analyzer"
+  "cSpell.enabled": true,
+  "window.zoomLevel": -1
 }
