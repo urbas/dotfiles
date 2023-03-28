@@ -4,7 +4,7 @@ setopt inc_append_history
 DISABLE_AUTO_UPDATE="true"
 plugins=(git ssh-agent)
 zstyle :omz:plugins:ssh-agent identities id_rsa
-ZSH=$NIX_HOME_ENV/lib/oh-my-zsh source $NIX_HOME_ENV/lib/oh-my-zsh/oh-my-zsh.sh
+ZSH=$HOME/.nix-profile/lib/oh-my-zsh source $HOME/.nix-profile/lib/oh-my-zsh/oh-my-zsh.sh
 
 # starship
 eval "$(starship init zsh)"
@@ -14,24 +14,13 @@ PROGRAMMING_DIR=$HOME/programming
 
 # Nix
 if [ -d $NIX_HOME_ENV ]; then
-  export LOCALE_ARCHIVE_2_27="$NIX_HOME_ENV/lib/locale/locale-archive"
+  export LOCALE_ARCHIVE_2_27="$HOME/.nix-profile/lib/locale/locale-archive"
 fi
 
-nus-all() {
-  (
-    set -eo pipefail
-    time nix-build ~/.nixpkgs --no-out-link -v $(nus-envs | xargs -n1 -I{} echo '-A envs.{}')
-    nus-envs | xargs -P8 -n1 -I{} zsh -c 'nix-env -f ~/.nixpkgs -p /nix/var/nix/profiles/{} -iA envs.{} && nix-env -p /nix/var/nix/profiles/{} --delete-generations 30d'
-    time nix-collect-garbage
-    time nix-store --optimise
-  )
-}
-
-nus-envs() {
-  (
-    set -eo pipefail
-    NIX_PATH=nixroot=$HOME/.nixpkgs nix-instantiate --eval --json -E 'with import <nixroot> {}; builtins.attrNames envs' | jq -r '.[]'
-  )
+npi() {
+  set -fx
+  nix profile install $HOME/.nixpkgs
+  nix profile wipe-history --older-than 50d
 }
 
 # Frequent directories aliases
