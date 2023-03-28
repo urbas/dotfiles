@@ -16,6 +16,7 @@
         devShells.${system}.default = pkgs.stdenvNoCC.mkDerivation { name = "dotfiles"; buildInputs = homeEnv.paths ++ input-sources; };
         packages.${system} = {
           inherit homeEnv pkgs;
+          default = homeEnv;
         };
       }
     );
