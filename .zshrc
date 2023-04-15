@@ -28,18 +28,26 @@ alias n="cd $PROGRAMMING_DIR/nest"
 alias p="cd $PROGRAMMING_DIR"
 
 # General aliases
-alias dotfiles="git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME"
-alias gaip="ga -ip"
 alias c="xclip -selection clipboard"
 alias v="xclip -selection clipboard -o"
 alias rf="rm -rf"
 
-function yqh() {
+yqh() {
   if [ $# -gt 0 ]; then
     yq -y $@ | bat -l yaml
   else
     yq -y '.' | bat -l yaml
   fi
+}
+
+# Git aliases
+alias dotfiles="git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME"
+alias gaip="ga -ip"
+
+gri() {
+  local _prevCommitIdx=$1
+  shift
+  git rebase -i --autosquash "$@" HEAD~$_prevCommitIdx
 }
 
 # Better cli
