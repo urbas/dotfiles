@@ -2,27 +2,29 @@
 name = Matej Urbas
 email = matej.urbas@gmail.com
 [alias]
-	st = status
-	ci = commit
-	co = checkout
-	fa = fetch --all --prune
-	br = branch
+  st = status
+  ci = commit
+  co = checkout
+  fa = fetch --all --prune
+  br = branch
 [core]
-	autocrlf = input
-	pager = delta
-	excludesFile = ~/.gitignore
+  autocrlf = input
+  pager = delta
+  excludesFile = ~/.gitignore
 [interactive]
-    diffFilter = delta --color-only
+  diffFilter = delta --color-only
 [merge]
-	tool = vimdiff
+  tool = vimdiff
 [push]
-	default = simple
+  default = simple
 [pull]
-	ff = only
+  ff = only
 [delta]
-    features = side-by-side line-numbers decorations
-    whitespace-error-style = 22 reverse
+  features = side-by-side line-numbers decorations
+  whitespace-error-style = 22 reverse
 [delta "decorations"]
-    commit-decoration-style = bold yellow box ul
-    file-style = bold yellow ul
-    file-decoration-style = none
+  commit-decoration-style = bold yellow box ul
+  file-style = bold yellow ul
+  file-decoration-style = none
+[rerere]
+	enabled = true
