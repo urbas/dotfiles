@@ -24,9 +24,22 @@ Change the fonts of your terminal to `Inconsolata for Powerline` (the fonts shou
 
 # Upgrade dev env
 
-```bash
-nix flake update .nixpkgs
-```
+1. Bump versions of dependencies:
+    ```bash
+    nix flake update ~/.nixpkgs
+    ```
+
+2. Install and test the upgraded tools:
+    ```bash
+    npi
+    ```
+
+3. Push the changes:
+    ```bash
+    dotfiles add ~/.nixpkgs
+    dotfiles ci -m "bump nixpkgs"
+    dotfiles push
+    ```
 
 # Troubleshooting
 

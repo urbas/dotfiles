@@ -18,7 +18,7 @@ if [ -d $NIX_HOME_ENV ]; then
 fi
 
 npi() {
-  set -fx
+  set -ex
   nix profile install $HOME/.nixpkgs
   nix profile wipe-history --older-than 50d
 }
