@@ -4,7 +4,7 @@ setopt inc_append_history
 DISABLE_AUTO_UPDATE="true"
 plugins=(git ssh-agent)
 zstyle :omz:plugins:ssh-agent identities id_rsa
-ZSH=$HOME/.nix-profile/lib/oh-my-zsh source $HOME/.nix-profile/lib/oh-my-zsh/oh-my-zsh.sh
+ZSH=$HOME/.nix-profile/share/oh-my-zsh source $HOME/.nix-profile/share/oh-my-zsh/oh-my-zsh.sh
 
 # starship
 eval "$(starship init zsh)"
