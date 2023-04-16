@@ -24,9 +24,9 @@ Change the fonts of your terminal to `Inconsolata for Powerline` (the fonts shou
 
 # Upgrade dev env
 
-Find the latest commit in the `nixos-unstable` branch: https://github.com/NixOS/nixpkgs/tree/nixos-unstable
-
-Then paste that commit into [./.nixpkgs/nixpkgs-src.nix](./.nixpkgs/nixpkgs-src.nix) and update the sha256.
+```bash
+nix flake update .nixpkgs
+```
 
 # Troubleshooting
 
