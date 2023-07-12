@@ -47,6 +47,7 @@ yqh() {
 # Git aliases
 alias dotfiles="git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME"
 alias gaip="ga -ip"
+alias gbgc="gb | grep -Ev '\*|master' | xargs -r -n1 git branch -d"
 
 gri() {
   local _prevCommitIdx=$1
