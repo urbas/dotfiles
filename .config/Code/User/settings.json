@@ -41,6 +41,5 @@
     "**/result*": true
   },
   "terminal.integrated.enableMultiLinePasteWarning": false,
-  "cSpell.enabled": true,
-  "window.zoomLevel": -1
+  "cSpell.language": "en-GB",
 }
