@@ -19,7 +19,6 @@
     ".zshrc*": "shellscript"
   },
   "workbench.tree.renderIndentGuides": "always",
-  "diffEditor.ignoreTrimWhitespace": false,
   "explorer.openEditors.visible": 0,
   "files.trimTrailingWhitespace": true,
   "search.searchOnType": false,
@@ -30,16 +29,18 @@
   "editor.suggest.preview": true,
   "files.exclude": {
     "**/.devEnv": true,
-    "**/result*": true
+    "**/result*": true,
   },
   "files.watcherExclude": {
     "**/.devEnv": true,
-    "**/result*": true
+    "**/result*": true,
   },
   "search.exclude": {
     "**/.devEnv": true,
-    "**/result*": true
+    "**/result*": true,
   },
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "cSpell.language": "en-GB",
+  "multiclip.bufferSize": 100,
+  "diffEditor.ignoreTrimWhitespace": false,
 }

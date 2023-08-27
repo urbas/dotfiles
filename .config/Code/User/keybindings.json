@@ -325,7 +325,7 @@
   },
   {
     "key": "ctrl+m ctrl+c",
-    "command": "workbench.action.debug.continue"
+    "command": "workbench.action.debug.continue",
   },
   {
     "key": "ctrl+shift+alt+up",
@@ -336,5 +336,25 @@
     "key": "ctrl+shift+alt+down",
     "command": "workbench.action.terminal.resizePaneDown",
     "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "-multiclip.paste",
+    "when": "editorTextFocus && editorLangId != 'markdown'"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "multiclip.list",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+0 ctrl+shift+0",
+    "command": "jupyter.restartkernelandrunallcells",
+    "when": "notebookEditorFocused",
+  },
+  {
+    "key": "ctrl+shift+0 ctrl+shift+c",
+    "command": "notebook.clearAllCellsOutputs",
+    "when": "notebookEditorFocused",
   },
 ]
