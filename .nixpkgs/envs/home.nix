@@ -17,6 +17,7 @@ let
     ncdu
     nix
     oh-my-zsh
+    python3
     python3.pkgs.ipython
     ripgrep
     rustup
