@@ -3,7 +3,6 @@
   "editor.minimap.enabled": false,
   "terminal.integrated.fontFamily": "Inconsolata for Powerline",
   "zenMode.centerLayout": false,
-  "workbench.activityBar.visible": false,
   "window.menuBarVisibility": "hidden",
   "editor.tabSize": 2,
   "[json]": {
@@ -43,4 +42,5 @@
   "cSpell.language": "en-GB",
   "multiclip.bufferSize": 100,
   "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.activityBar.location": "hidden",
 }
