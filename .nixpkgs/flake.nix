@@ -6,6 +6,6 @@
     with nixpkgs.legacyPackages.${system}; rec {
       devShells.default = mkShell { buildInputs = packages.default.paths; };
       packages.default = import ./envs/home.nix { inherit pkgs; };
-      packages.pkgs = pkgs;
+      legacyPackages = pkgs;
     });
 }
