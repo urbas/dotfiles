@@ -7,6 +7,7 @@ let
     entr
     fd
     file
+    firefox
     fzf
     gitAndTools.delta
     gitAndTools.gitFull
@@ -14,6 +15,7 @@ let
     htop
     hyperfine
     jq
+    libreoffice
     ncdu
     nix
     oh-my-zsh
@@ -26,6 +28,7 @@ let
     tmux
     tree
     vim
+    vscode
     xclip
     yq
     zsh

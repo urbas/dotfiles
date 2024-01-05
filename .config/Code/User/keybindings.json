@@ -338,16 +338,6 @@
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+shift+v",
-    "command": "-multiclip.paste",
-    "when": "editorTextFocus && editorLangId != 'markdown'"
-  },
-  {
-    "key": "ctrl+shift+v",
-    "command": "multiclip.list",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+shift+0 ctrl+shift+0",
     "command": "jupyter.restartkernelandrunallcells",
     "when": "notebookEditorFocused",
