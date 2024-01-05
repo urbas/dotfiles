@@ -195,23 +195,8 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+shift+alt+up",
-    "command": "-editor.action.copyLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+shift+alt+up",
-    "command": "editor.action.insertCursorAbove",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "shift+alt+up",
     "command": "-editor.action.insertCursorAbove",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+alt+down",
-    "command": "editor.action.insertCursorBelow",
     "when": "editorTextFocus"
   },
   {
@@ -222,11 +207,6 @@
   {
     "key": "shift+alt+down",
     "command": "editor.action.copyLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+shift+alt+down",
-    "command": "-editor.action.copyLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
@@ -328,16 +308,6 @@
     "command": "workbench.action.debug.continue",
   },
   {
-    "key": "ctrl+shift+alt+up",
-    "command": "workbench.action.terminal.resizePaneUp",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+shift+alt+down",
-    "command": "workbench.action.terminal.resizePaneDown",
-    "when": "terminalFocus"
-  },
-  {
     "key": "ctrl+shift+0 ctrl+shift+0",
     "command": "jupyter.restartkernelandrunallcells",
     "when": "notebookEditorFocused",
@@ -346,5 +316,25 @@
     "key": "ctrl+shift+0 ctrl+shift+c",
     "command": "notebook.clearAllCellsOutputs",
     "when": "notebookEditorFocused",
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "-workbench.action.terminal.selectToPreviousCommand",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "-workbench.action.terminal.scrollUp",
+    "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "workbench.action.terminal.resizePaneUp",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "workbench.action.terminal.resizePaneDown",
+    "when": "terminalFocus"
   },
 ]
