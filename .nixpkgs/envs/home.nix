@@ -15,6 +15,7 @@ let
     htop
     hyperfine
     jq
+    keepassxc
     libreoffice
     ncdu
     nix
