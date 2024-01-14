@@ -14,4 +14,5 @@ Press and hold the Program key and tap F8.
 
 # Factory hard reset
 
-Press and hold Program + F9 while plugging the keyboard in (hold until the lights flash and release).
+Press and hold Program + F9 while plugging the keyboard in (hold until the
+lights flash and release).
