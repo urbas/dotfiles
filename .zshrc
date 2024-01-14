@@ -36,12 +36,17 @@ alias c="xclip -selection clipboard"
 alias v="xclip -selection clipboard -o"
 alias rf="rm -rf"
 
+# Useful functions
 yqh() {
   if [ $# -gt 0 ]; then
     yq -y $@ | bat -l yaml
   else
     yq -y '.' | bat -l yaml
   fi
+}
+
+epoch2date() {
+  date --date="@$1"
 }
 
 # Git aliases
