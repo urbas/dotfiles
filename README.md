@@ -1,8 +1,9 @@
 # Setup
 
-Prerequisites:
+Prerequisites: `nix`, `zsh`, and `git`.
+
+Make sure `zsh` is your default shell:
 ```bash
-sudo apt-get install -y zsh git
 chsh -s /bin/zsh
 ```
 
@@ -17,6 +18,8 @@ Dotfiles setup:
   git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME reset $HOME
   git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME checkout $HOME
   git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME pull
+
+  nix profile install ~/.nixpkgs
 )
 ```
 
