@@ -337,4 +337,12 @@
     "command": "workbench.action.terminal.resizePaneDown",
     "when": "terminalFocus"
   },
+  {
+    "key": "ctrl+shift+0 ctrl+shift+r",
+    "command": "notebook.execute"
+  },
+  {
+    "key": "f1",
+    "command": "-workbench.action.showCommands"
+  }
 ]
