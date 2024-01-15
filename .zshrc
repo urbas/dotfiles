@@ -12,10 +12,6 @@ eval "$(starship init zsh)"
 PROGRAMMING_DIR=$HOME/programming
 
 # Nix
-if [ -d $NIX_HOME_ENV ]; then
-  export LOCALE_ARCHIVE_2_27="$HOME/.nix-profile/lib/locale/locale-archive"
-fi
-
 npi() {
   # If you don't have a profile installed yet, install it:
   # nix profile install $HOME/.nixpkgs
