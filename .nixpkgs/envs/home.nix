@@ -9,6 +9,7 @@ let
     file
     firefox
     fzf
+    gparted
     gitAndTools.delta
     gitAndTools.gitFull
     glibcLocales
