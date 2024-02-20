@@ -1,15 +1,12 @@
 { pkgs }:
 let
   paths = with pkgs; [
-    awscli
     bat
     direnv
-    entr
     fd
     file
     firefox
     fzf
-    gparted
     gitAndTools.delta
     gitAndTools.gitFull
     glibcLocales
@@ -19,7 +16,6 @@ let
     keepassxc
     libreoffice
     ncdu
-    nix
     oh-my-zsh
     python3
     python3.pkgs.ipython
