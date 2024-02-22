@@ -345,7 +345,7 @@
     "command": "-workbench.action.zoomIn"
   },
   {
-    "key": "ctrl+alt+=",
+    "key": "ctrl+alt+right",
     "command": "workbench.action.navigateForward"
   },
 ]
