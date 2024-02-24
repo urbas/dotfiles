@@ -43,4 +43,5 @@
   "multiclip.bufferSize": 100,
   "diffEditor.ignoreTrimWhitespace": false,
   "workbench.activityBar.location": "hidden",
+  "files.simpleDialog.enable": true,
 }
