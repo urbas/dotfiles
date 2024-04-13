@@ -31,6 +31,11 @@ let
     yq
     zsh
     zstd
+
+    # Multimedia
+    gimp
+    shotwell
+    vlc
   ];
 
 in pkgs.buildEnv {
