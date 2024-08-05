@@ -13,12 +13,10 @@ GIT_DIR=$HOME/git
 
 # Nix
 npi() {
-  # If you don't have a profile installed yet, install it:
-  # nix profile install $HOME/.nixpkgs
   (
     set -ex
     nix profile upgrade '.*'
-    nix profile wipe-history --older-than 50d
+    nix profile wipe-history --older-than 21d
   )
 }
 

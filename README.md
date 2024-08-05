@@ -21,7 +21,11 @@ Dotfiles setup:
   git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME checkout $HOME
   git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME pull
 
-  nix profile install ~/.nixpkgs
+  # This installs only CLI tools
+  nix profile install ~/.nixpkgs#cli
+
+  # This installs both CLI tools and GUI tools
+  nix profile install ~/.nixpkgs#gui
 )
 ```
 
