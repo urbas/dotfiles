@@ -5,53 +5,57 @@
   outputs = { self, nixpkgs, flake-utils, ... }: flake-utils.lib.eachSystem [ "x86_64-linux" "aarch64-linux" ] (system:
     with (import nixpkgs { inherit system; config.allowUnfree = true; }); let
 
-        cliTools = with pkgs; [
-          bat
-          direnv
-          fd
-          file
-          fzf
-          gitAndTools.delta
-          gitAndTools.gitFull
-          glibcLocales
-          htop
-          hyperfine
-          jq
-          ncdu
-          oh-my-zsh
-          python3
-          python3.pkgs.ipython
-          ripgrep
-          starship
-          tldr
-          tmux
-          tree
-          vim
-          xclip
-          yq
-          zsh
-          zstd
-        ];
+      cliTools = with pkgs; [
+        bat
+        direnv
+        fd
+        file
+        fzf
+        gitAndTools.delta
+        gitAndTools.gitFull
+        glibcLocales
+        htop
+        hyperfine
+        jq
+        ncdu
+        oh-my-zsh
+        python3
+        python3.pkgs.ipython
+        ripgrep
+        starship
+        tldr
+        tmux
+        tree
+        vim
+        xclip
+        yq
+        zsh
+        zstd
+      ];
 
-        guiTools = with pkgs; [
-          firefox
-          gimp
-          keepassxc
-          libreoffice
-          rustup
-          shotwell
-          steam
-          vlc
-          vscode
-        ];
+      guiTools = with pkgs; [
+        firefox
+        gimp
+        keepassxc
+        libreoffice
+        rustup
+        shotwell
+        steam
+        vlc
+        vscode
+      ];
 
-        guiEnv = pkgs.buildEnv { name = "gui"; paths = cliTools ++ guiTools; };
-        cliEnv = pkgs.buildEnv { name = "cli"; paths = cliTools; };
+      devTools = with pkgs; [
+        nixpkgs-fmt
+      ];
 
-      in {
-      devShells.default = mkShell { buildInputs = cliTools ++ guiTools; };
-      packages.gui = guiEnv;
-      packages.cli = cliEnv;
+      gui = pkgs.buildEnv { name = "gui"; paths = cliTools ++ guiTools; };
+      cli = pkgs.buildEnv { name = "cli"; paths = cliTools; };
+
+    in
+    {
+      devShells.default = mkShell { buildInputs = devTools; };
+      packages = { inherit cli gui; };
       legacyPackages = pkgs;
     });
 }
