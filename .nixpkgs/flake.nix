@@ -40,6 +40,7 @@
           libreoffice
           rustup
           shotwell
+          steam
           vlc
           vscode
         ];
