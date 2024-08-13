@@ -41,6 +41,7 @@
         rustup
         shotwell
         steam
+        ungoogled-chromium
         vlc
         vscode
       ];
