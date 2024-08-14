@@ -34,6 +34,7 @@
       ];
 
       guiTools = with pkgs; [
+        chromium
         firefox
         gimp
         keepassxc
@@ -41,7 +42,6 @@
         rustup
         shotwell
         steam
-        ungoogled-chromium
         vlc
         vscode
       ];
