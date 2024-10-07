@@ -19,6 +19,7 @@
         jq
         ncdu
         oh-my-zsh
+        pv
         python3
         python3.pkgs.ipython
         ripgrep
