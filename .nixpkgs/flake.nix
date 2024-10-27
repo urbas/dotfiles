@@ -1,9 +1,12 @@
 {
   inputs.flake-utils.url = "github:numtide/flake-utils";
   inputs.nixpkgs.url = "nixpkgs/nixos-24.05";
+  inputs.nixpkgs-unstable.url = "nixpkgs/nixos-unstable";
 
-  outputs = { self, nixpkgs, flake-utils, ... }: flake-utils.lib.eachSystem [ "x86_64-linux" "aarch64-linux" ] (system:
-    with (import nixpkgs { inherit system; config.allowUnfree = true; }); let
+  outputs = { self, nixpkgs, nixpkgs-unstable, flake-utils, ... }: flake-utils.lib.eachSystem [ "x86_64-linux" "aarch64-linux" ] (system:
+    let
+      pkgs = import nixpkgs { inherit system; config.allowUnfree = true; };
+      pkgsUnstable = import nixpkgs-unstable { inherit system; config.allowUnfree = true; };
 
       cliTools = with pkgs; [
         bat
@@ -16,6 +19,7 @@
         glibcLocales
         htop
         hyperfine
+        jless
         jq
         ncdu
         oh-my-zsh
@@ -35,6 +39,7 @@
       ];
 
       guiTools = with pkgs; [
+        pkgsUnstable.aider-chat
         chromium
         firefox
         gimp
@@ -56,8 +61,8 @@
 
     in
     {
-      devShells.default = mkShell { buildInputs = devTools; };
+      devShells.default = pkgs.mkShell { buildInputs = devTools; };
       packages = { inherit cli gui; };
-      legacyPackages = pkgs;
+      legacyPackages = { inherit pkgs pkgsUnstable; };
     });
 }
