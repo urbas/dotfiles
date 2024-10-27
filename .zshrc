@@ -83,3 +83,7 @@ fi
 if (( $+commands[direnv] )); then
   eval "$(direnv hook zsh)"
 fi
+
+if [[ -f ~/.cache/manual-secrets/opernrouter-aider-key ]]; then
+  export OPENROUTER_API_KEY=$(< ~/.cache/manual-secrets/opernrouter-aider-key )
+fi
