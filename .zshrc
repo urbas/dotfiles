@@ -83,3 +83,8 @@ fi
 if (( $+commands[direnv] )); then
   eval "$(direnv hook zsh)"
 fi
+
+# Source local configuration if it exists
+if [[ -f ~/.zshrc-local ]]; then
+  source ~/.zshrc-local
+fi
