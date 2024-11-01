@@ -43,7 +43,7 @@ should be already installed).
 2. Install and test the upgraded tools:
 
    ```bash
-   npi
+   npu
    ```
 
 3. Push the changes:

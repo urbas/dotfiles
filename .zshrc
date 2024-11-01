@@ -12,7 +12,7 @@ eval "$(starship init zsh)"
 GIT_DIR=$HOME/git
 
 # Nix
-npi() {
+npu() {
   (
     set -ex
     nix profile upgrade '.*'
