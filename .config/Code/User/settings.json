@@ -44,4 +44,5 @@
   "workbench.activityBar.location": "hidden",
   "files.simpleDialog.enable": true,
   "update.mode": "none",
+  "terminal.integrated.localEchoEnabled": "off",
 }
