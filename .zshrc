@@ -58,19 +58,25 @@ export FZF_DEFAULT_COMMAND='fd --hidden --follow --exclude .git --exclude .cache
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND --type f"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
 
-if (( $+commands[fzf-share] )); then
-  . $(fzf-share)/key-bindings.zsh
+if (( $+commands[fzf] )); then
+  source <(fzf --zsh)
 
-  # Select and checkout a git branch
+  # Switch to a git repo and optionally checkout a git branch
   fzf-branches-widget() {
-    local selected
     setopt localoptions noglobsubst noposixbuiltins pipefail 2> /dev/null
-    selected=( $(fd -t d --exact-depth 1 . $GIT_DIR -x bash -c "git -C {} branch 2> /dev/null | sed -E 's,^\*(.*)$, \1 \o033[0;32m(current)\o033[0m,' | sed -E 's,^ ,\o033[0;34m{}\o033[0m,'" | grep -v 'HEAD detached' |
-      FZF_DEFAULT_OPTS="--height ${FZF_TMUX_HEIGHT:-40%} $FZF_DEFAULT_OPTS --ansi -n2..,.. --tiebreak=index --bind=ctrl-r:toggle-sort $FZF_CTRL_R_OPTS --query=${(qqq)LBUFFER} +m" $(__fzfcmd)) )
+    local selected=(
+      $(
+        fd -t d --exact-depth 1 . $GIT_DIR -x bash -c "printf '\e[31m{}\e[0m\n'; git -C {} branch 2> /dev/null | sed -E 's,^\*(.*)$, \1 \o033[0;32m(current)\o033[0m,' | sed -E 's,^ ,\o033[0;34m{}\o033[0m,'" \
+          | grep -v 'HEAD detached' \
+          | FZF_DEFAULT_OPTS="--height ${FZF_TMUX_HEIGHT:-40%} $FZF_DEFAULT_OPTS --ansi -n2..,.. --tiebreak=index --bind=ctrl-z:toggle-sort $FZF_CTRL_R_OPTS --query=${(qqq)LBUFFER} +m" $(__fzfcmd)
+      )
+    )
     local ret=$?
     if [ -n "$selected" ]; then
       cd ${selected[1]}
-      git checkout ${selected[2]}
+      if [[ -n "${selected[2]}" ]]; then
+        git checkout ${selected[2]}
+      fi
       echo
     fi
     zle reset-prompt
