@@ -1,6 +1,6 @@
 [user]
-name = Matej Urbas
-email = matej.urbas@gmail.com
+  name = Matej Urbas
+  email = matej.urbas@gmail.com
 [alias]
   st = status
   ci = commit
@@ -15,6 +15,7 @@ email = matej.urbas@gmail.com
   diffFilter = delta --color-only
 [merge]
   tool = vimdiff
+  conflictStyle = zdiff3
 [push]
   default = simple
 [pull]
@@ -23,8 +24,8 @@ email = matej.urbas@gmail.com
   features = side-by-side line-numbers decorations
   whitespace-error-style = 22 reverse
 [delta "decorations"]
+  navigate = true
   commit-decoration-style = bold yellow box ul
-  file-style = bold yellow ul
-  file-decoration-style = none
+  file-style = bold yellow box
 [rerere]
-	enabled = true
+  enabled = true
