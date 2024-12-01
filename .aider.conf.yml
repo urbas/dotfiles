@@ -1,3 +1,4 @@
 gitignore: false
 attribute-author: false
 attribute-committer: false
+check-update: false

@@ -33,10 +33,12 @@
   "files.watcherExclude": {
     "**/.devEnv": true,
     "**/result*": true,
+    ".aider.*": true,
   },
   "search.exclude": {
     "**/.devEnv": true,
     "**/result*": true,
+    ".aider.*": true,
   },
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "cSpell.language": "en-GB",
