@@ -15,7 +15,7 @@ GIT_DIR=$HOME/git
 npu() {
   (
     set -ex
-    nix profile upgrade '.*'
+    nix profile upgrade --all
     nix profile wipe-history --older-than 21d
   )
 }
