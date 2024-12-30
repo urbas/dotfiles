@@ -48,7 +48,6 @@
             python3.pkgs.ipython
             ripgrep
             starship
-            tldr
             tmux
             tree
             vim
