@@ -1,4 +1,7 @@
-gitignore: false
 attribute-author: false
 attribute-committer: false
 check-update: false
+gitignore: false
+
+model: "openrouter/anthropic/claude-3.5-sonnet:beta"
+weak-model: "openrouter/anthropic/claude-3-haiku"
