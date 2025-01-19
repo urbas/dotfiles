@@ -58,12 +58,13 @@
           ];
 
           guiTools = with pkgs; [
-            pkgsUnstable.aider-chat
             chromium
+            deluge
             firefox
             gimp
             keepassxc
             libreoffice
+            pkgsUnstable.aider-chat
             rustup
             shotwell
             steam

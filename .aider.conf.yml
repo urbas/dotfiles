@@ -1,7 +1,10 @@
 attribute-author: false
 attribute-committer: false
+auto-lint: false
 check-update: false
 gitignore: false
+subtree-only: true
+watch-files: true
 
 model: "openrouter/anthropic/claude-3.5-sonnet:beta"
 weak-model: "openrouter/anthropic/claude-3-haiku"
