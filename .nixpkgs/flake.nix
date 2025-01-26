@@ -64,7 +64,7 @@
             gimp
             keepassxc
             libreoffice
-            pkgsUnstable.aider-chat
+            pkgsUnstable.aider-chat.withPlaywright
             rustup
             shotwell
             steam
