@@ -1,13 +1,13 @@
 {
   inputs.flake-utils.url = "github:numtide/flake-utils";
   inputs.nixpkgs.url = "nixpkgs/nixos-24.11";
-  inputs.nixpkgs-unstable.url = "nixpkgs/nixos-unstable";
+  inputs.nixpkgs-aider.url = "nixpkgs/master";
 
   outputs =
     {
       self,
       nixpkgs,
-      nixpkgs-unstable,
+      nixpkgs-aider,
       flake-utils,
       ...
     }:
@@ -23,7 +23,7 @@
             inherit system;
             config.allowUnfree = true;
           };
-          pkgsUnstable = import nixpkgs-unstable {
+          pkgsAider = import nixpkgs-aider {
             inherit system;
             config.allowUnfree = true;
           };
@@ -64,7 +64,7 @@
             gimp
             keepassxc
             libreoffice
-            pkgsUnstable.aider-chat.withPlaywright
+            pkgsAider.aider-chat.withPlaywright
             rustup
             shotwell
             steam
@@ -90,7 +90,7 @@
             inherit cli gui;
           };
           legacyPackages = {
-            inherit pkgs pkgsUnstable;
+            inherit pkgs pkgsAider;
           };
         }
       );

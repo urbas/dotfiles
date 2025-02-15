@@ -6,5 +6,5 @@ gitignore: false
 subtree-only: true
 watch-files: true
 
-model: "openrouter/anthropic/claude-3.5-sonnet:beta"
+model: "openrouter/anthropic/claude-3.7-sonnet"
 weak-model: "openrouter/anthropic/claude-3-haiku"
