@@ -37,7 +37,7 @@ should be already installed).
 1. Bump versions of dependencies:
 
    ```bash
-   nix flake update ~/.nixpkgs
+   nix flake update --flake ~/.nixpkgs
    ```
 
 2. Install and test the upgraded tools:
