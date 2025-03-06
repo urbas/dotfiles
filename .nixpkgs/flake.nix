@@ -42,6 +42,7 @@
             jless
             jq
             ncdu
+            nix-direnv
             oh-my-zsh
             pv
             python3
