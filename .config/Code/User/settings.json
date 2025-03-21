@@ -27,16 +27,16 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.suggest.preview": true,
   "files.exclude": {
-    "**/.devEnv": true,
+    "**/.direnv": true,
     "**/result*": true,
   },
   "files.watcherExclude": {
-    "**/.devEnv": true,
+    "**/.direnv": true,
     "**/result*": true,
     ".aider.*": true,
   },
   "search.exclude": {
-    "**/.devEnv": true,
+    "**/.direnv": true,
     "**/result*": true,
     ".aider.*": true,
   },
