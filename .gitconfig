@@ -29,3 +29,5 @@
   file-style = bold yellow box
 [rerere]
   enabled = true
+[init]
+	defaultBranch = main
