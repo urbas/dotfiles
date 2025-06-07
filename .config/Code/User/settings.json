@@ -47,4 +47,5 @@
   "files.simpleDialog.enable": true,
   "update.mode": "none",
   "terminal.integrated.localEchoEnabled": "off",
+  "prettier.proseWrap": "always",
 }

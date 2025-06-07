@@ -1,6 +1,6 @@
 {
   inputs.flake-utils.url = "github:numtide/flake-utils";
-  inputs.nixpkgs.url = "nixpkgs/nixos-24.11";
+  inputs.nixpkgs.url = "nixpkgs/nixos-25.05";
   inputs.nixpkgs-aider.url = "nixpkgs/master";
 
   outputs =
@@ -28,12 +28,18 @@
             config.allowUnfree = true;
           };
 
+          aider-chat = pkgsAider.aider-chat.withOptional {
+            withBrowser = true;
+            withPlaywright = true;
+          };
+
           cliTools = with pkgs; [
             bat
             direnv
             fd
             file
             fzf
+            gdu
             gitAndTools.delta
             gitAndTools.gitFull
             glibcLocales
@@ -59,14 +65,14 @@
           ];
 
           guiTools = with pkgs; [
+            aider-chat
             chromium
             deluge
             firefox
             gimp
             keepassxc
+            kitty
             libreoffice
-            pkgsAider.aider-chat.withPlaywright
-            rustup
             shotwell
             steam
             vlc
