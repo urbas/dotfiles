@@ -6,5 +6,5 @@ gitignore: false
 subtree-only: true
 watch-files: true
 
-model: "openrouter/anthropic/claude-3.7-sonnet"
+model: "openrouter/anthropic/claude-sonnet-4"
 weak-model: "openrouter/google/gemini-2.0-flash-001"
