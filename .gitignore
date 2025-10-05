@@ -3,4 +3,3 @@
 /.devEnv
 /.direnv
 /.nixpkgs/.direnv
-.aider.*

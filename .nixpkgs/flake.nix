@@ -1,13 +1,13 @@
 {
   inputs.flake-utils.url = "github:numtide/flake-utils";
   inputs.nixpkgs.url = "nixpkgs/nixos-25.05";
-  inputs.nixpkgs-aider.url = "nixpkgs/master";
+  inputs.nixpkgsMaster.url = "nixpkgs/master";
 
   outputs =
     {
       self,
       nixpkgs,
-      nixpkgs-aider,
+      nixpkgsMaster,
       flake-utils,
       ...
     }:
@@ -23,15 +23,7 @@
             inherit system;
             config.allowUnfree = true;
           };
-          pkgsAider = import nixpkgs-aider {
-            inherit system;
-            config.allowUnfree = true;
-          };
-
-          aider-chat = pkgsAider.aider-chat.withOptional {
-            withBrowser = true;
-            withPlaywright = true;
-          };
+          pkgsMaster = nixpkgsMaster.legacyPackages.${system};
 
           cliTools = with pkgs; [
             bat
@@ -65,7 +57,6 @@
           ];
 
           guiTools = with pkgs; [
-            aider-chat
             chromium
             deluge
             firefox
@@ -73,6 +64,7 @@
             keepassxc
             kitty
             libreoffice
+            pkgsMaster.opencode
             shotwell
             steam
             vlc
@@ -97,7 +89,7 @@
             inherit cli gui;
           };
           legacyPackages = {
-            inherit pkgs pkgsAider;
+            inherit pkgs pkgsMaster;
           };
         }
       );

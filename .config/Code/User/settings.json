@@ -33,12 +33,10 @@
   "files.watcherExclude": {
     "**/.direnv": true,
     "**/result*": true,
-    ".aider.*": true,
   },
   "search.exclude": {
     "**/.direnv": true,
     "**/result*": true,
-    ".aider.*": true,
   },
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "cSpell.language": "en-GB",
