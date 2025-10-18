@@ -62,7 +62,6 @@
             firefox
             gimp
             keepassxc
-            kitty
             libreoffice
             pkgsMaster.opencode
             shotwell
