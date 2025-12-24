@@ -1,6 +1,6 @@
 {
   inputs.flake-utils.url = "github:numtide/flake-utils";
-  inputs.nixpkgs.url = "nixpkgs/nixos-25.05";
+  inputs.nixpkgs.url = "nixpkgs/nixos-25.11";
   inputs.nixpkgsMaster.url = "nixpkgs/master";
 
   outputs =
@@ -27,13 +27,13 @@
 
           cliTools = with pkgs; [
             bat
+            delta
             direnv
             fd
             file
             fzf
             gdu
-            gitAndTools.delta
-            gitAndTools.gitFull
+            git
             glibcLocales
             htop
             hyperfine
@@ -68,6 +68,7 @@
             steam
             vlc
             vscode
+            uv
           ];
 
           devTools = with pkgs; [ nixfmt-rfc-style ];
