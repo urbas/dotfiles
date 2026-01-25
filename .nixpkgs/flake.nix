@@ -69,6 +69,7 @@
             vlc
             vscode
             uv
+            pkgsMaster.zed-editor
           ];
 
           devTools = with pkgs; [ nixfmt-rfc-style ];

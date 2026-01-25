@@ -3,7 +3,6 @@
   "editor.minimap.enabled": false,
   "terminal.integrated.fontFamily": "Inconsolata for Powerline",
   "zenMode.centerLayout": false,
-  "window.menuBarVisibility": "hidden",
   "editor.tabSize": 2,
   "[json]": {
     "editor.tabSize": 2,
