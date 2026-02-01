@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "load_direnv": "shell_hook",
   "ssh_connections": [
     {
       "host": "uk1.local",
@@ -28,5 +29,10 @@
     "mode": "system",
     "light": "Ayu Light",
     "dark": "Ayu Dark",
+  },
+  "languages": {
+    "Nix": {
+      "language_servers": ["nixd", "!nil"],
+    },
   },
 }

@@ -24,4 +24,27 @@
       "ctrl-e ctrl-s": "editor::SortLinesCaseInsensitive",
     },
   },
+  {
+    "bindings": {
+      "ctrl-1": "editor::ToggleFocus",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-2": ["workspace::ActivatePane", 1],
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-3": ["workspace::ActivatePane", 2],
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-4": ["workspace::ActivatePane", 3],
+    },
+  },
 ]
