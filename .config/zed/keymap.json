@@ -108,5 +108,15 @@
     "bindings": {
       "f5": null
     }
+  },
+  {
+    "bindings": {
+      "ctrl-alt-shift-pageup": "workspace::MovePaneLeft"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-alt-shift-pagedown": "workspace::MovePaneRight"
+    }
   }
 ]
