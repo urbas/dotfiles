@@ -7,6 +7,21 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "terminal": {
+    "font_size": 14.0,
+    "font_family": "Roboto Mono",
+  },
+  "buffer_line_height": "comfortable",
+  "buffer_font_family": "Roboto Mono",
+  "tab_size": 2,
+  "inline_code_actions": true,
+  "gutter": {
+    "min_line_number_digits": 1,
+    "line_numbers": true,
+    "folds": false,
+    "breakpoints": true,
+    "runnables": true,
+  },
   "load_direnv": "shell_hook",
   "ssh_connections": [
     {
@@ -24,7 +39,7 @@
     "metrics": false,
   },
   "ui_font_size": 16,
-  "buffer_font_size": 15,
+  "buffer_font_size": 14.0,
   "theme": {
     "mode": "system",
     "light": "Ayu Light",

@@ -25,8 +25,9 @@
     },
   },
   {
+    "context": "Workspace",
     "bindings": {
-      "ctrl-1": "editor::ToggleFocus",
+      "ctrl-1": ["workspace::ActivatePane", 0],
     },
   },
   {
@@ -47,4 +48,65 @@
       "ctrl-4": ["workspace::ActivatePane", 3],
     },
   },
+  {
+    "bindings": {
+      "ctrl-!": "editor::ToggleFocus",
+    },
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "enter": null,
+    },
+  },
+  {
+    "context": "(ProjectPanel && not_editing)",
+    "bindings": {
+      "enter": "project_panel::Open",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-`": "workspace::ToggleLeftDock",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-alt-z": "terminal_panel::Toggle",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-alt-[": [
+        "workspace::DecreaseActiveDockSize",
+        {
+          "px": 0,
+        },
+      ],
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-alt-]": [
+        "workspace::IncreaseActiveDockSize",
+        {
+          "px": 0
+        }
+      ]
+    }
+  },
+  {
+    "bindings": {
+      "f4": null
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "f5": null
+    }
+  }
 ]
