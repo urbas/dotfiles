@@ -118,5 +118,29 @@
     "bindings": {
       "ctrl-alt-shift-pagedown": "workspace::MovePaneRight"
     }
+  },
+  {
+    "context": "GitPicker",
+    "bindings": {
+      "alt-1": null
+    }
+  },
+  {
+    "context": "RunModal",
+    "bindings": {
+      "alt-1": null
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-1": null
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-1": null
+    }
   }
 ]
