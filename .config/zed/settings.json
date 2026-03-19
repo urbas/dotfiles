@@ -46,6 +46,9 @@
     "dark": "Ayu Dark",
   },
   "languages": {
+    "Python": {
+      "tab_size": 4
+    },
     "Nix": {
       "language_servers": ["nixd", "!nil"],
     },
