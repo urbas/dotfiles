@@ -19,11 +19,13 @@
       (
         system:
         let
-          pkgs = import nixpkgs {
+          nixpkgsArgs = {
             inherit system;
             config.allowUnfree = true;
           };
-          pkgsMaster = nixpkgsMaster.legacyPackages.${system};
+
+          pkgs = import nixpkgs nixpkgsArgs;
+          pkgsMaster = import nixpkgsMaster nixpkgsArgs;
 
           cliTools = with pkgs; [
             bat
