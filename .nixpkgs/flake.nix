@@ -2,12 +2,14 @@
   inputs.flake-utils.url = "github:numtide/flake-utils";
   inputs.nixpkgs.url = "nixpkgs/nixos-25.11";
   inputs.nixpkgsMaster.url = "nixpkgs/master";
+  inputs.nixpkgsUnstable.url = "nixpkgs/nixos-unstable";
 
   outputs =
     {
       self,
       nixpkgs,
       nixpkgsMaster,
+      nixpkgsUnstable,
       flake-utils,
       ...
     }:
@@ -26,6 +28,7 @@
 
           pkgs = import nixpkgs nixpkgsArgs;
           pkgsMaster = import nixpkgsMaster nixpkgsArgs;
+          pkgsUnstable = import nixpkgsUnstable nixpkgsArgs;
 
           cliTools = with pkgs; [
             bat
@@ -71,7 +74,7 @@
             vlc
             vscode
             uv
-            pkgsMaster.zed-editor
+            pkgsUnstable.zed-editor
           ];
 
           devTools = with pkgs; [ nixfmt-rfc-style ];
