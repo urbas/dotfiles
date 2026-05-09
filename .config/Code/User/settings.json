@@ -46,4 +46,5 @@
   "terminal.integrated.localEchoEnabled": "off",
   "prettier.proseWrap": "always",
   "gitlens.rebaseEditor.openOnPausedRebase": false,
+  "clipboard-manager.snippet.enabled": false,
 }

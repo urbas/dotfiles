@@ -74,7 +74,11 @@
             vlc
             vscode
             uv
-            pkgsUnstable.zed-editor
+            # I tried using zed for a while and it just isn't cutting it for me at the moment. Biggest problems:
+            #   - Very bad support for diffing current file with git history.
+            #   - Cannot move tabs between editor groups.
+            #   - Markdown rendered preview is really bad.
+            # pkgsUnstable.zed-editor
           ];
 
           devTools = with pkgs; [ nixfmt-rfc-style ];
