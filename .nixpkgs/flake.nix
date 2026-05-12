@@ -74,6 +74,7 @@
             vlc
             vscode
             uv
+            pkgsUnstable.claude-code
             # I tried using zed for a while and it just isn't cutting it for me at the moment. Biggest problems:
             #   - Very bad support for diffing current file with git history.
             #   - Cannot move tabs between editor groups.
