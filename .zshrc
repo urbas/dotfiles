@@ -3,7 +3,7 @@ setopt inc_append_history
 # oh-my-zsh
 DISABLE_AUTO_UPDATE="true"
 plugins=(git ssh-agent)
-ZSH=$HOME/.nix-profile/share/oh-my-zsh source $HOME/.nix-profile/share/oh-my-zsh/oh-my-zsh.sh
+ZSH=$MY_HOME_PROFILE/share/oh-my-zsh source $MY_HOME_PROFILE/share/oh-my-zsh/oh-my-zsh.sh
 
 # starship
 eval "$(starship init zsh)"
@@ -12,11 +12,15 @@ eval "$(starship init zsh)"
 GIT_DIR=$HOME/git
 
 # Nix
+np() {
+  nix profile "$1" --profile "$MY_HOME_PROFILE" "${@:2}"
+}
+
 npu() {
   (
     set -ex
-    nix profile upgrade --all
-    nix profile wipe-history --older-than 21d
+    np upgrade --all
+    np wipe-history --older-than 21d
   )
 }
 
