@@ -47,4 +47,6 @@
   "prettier.proseWrap": "always",
   "gitlens.rebaseEditor.openOnPausedRebase": false,
   "clipboard-manager.snippet.enabled": false,
+  "terminal.integrated.shellIntegration.enabled": false,
+  "python-envs.terminal.autoActivationType": "off",
 }
