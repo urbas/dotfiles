@@ -7,50 +7,52 @@
 // from the command palette.
 [
   {
-    "context": "Workspace",
     "bindings": {
-      // "shift shift": "file_finder::Toggle"
-    },
-  },
-  {
-    "context": "Editor && vim_mode == insert",
-    "bindings": {
-      // "j k": "vim::NormalBefore"
-    },
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      "ctrl-e ctrl-s": "editor::SortLinesCaseInsensitive",
+      "ctrl-!": "editor::ToggleFocus",
+      "ctrl-alt-z": "terminal_panel::Toggle",
+      "f4": null,
     },
   },
   {
     "context": "Workspace",
     "bindings": {
       "ctrl-1": ["workspace::ActivatePane", 0],
-    },
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
       "ctrl-2": ["workspace::ActivatePane", 1],
-    },
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
       "ctrl-3": ["workspace::ActivatePane", 2],
-    },
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
       "ctrl-4": ["workspace::ActivatePane", 3],
+      "ctrl-`": "workspace::ToggleLeftDock",
+      "ctrl-alt-[": [
+        "workspace::DecreaseActiveDockSize",
+        {
+          "px": 0,
+        },
+      ],
+      "ctrl-alt-]": [
+        "workspace::IncreaseActiveDockSize",
+        {
+          "px": 0,
+        },
+      ],
+      "f5": null,
+      "alt-1": null,
+      "ctrl-alt-shift-pagedown": [
+        "workspace::MoveItemToPaneInDirection",
+        {
+          "direction": "right",
+        },
+      ],
+      "ctrl-alt-shift-pageup": [
+        "workspace::MoveItemToPaneInDirection",
+        {
+          "direction": "left",
+        },
+      ],
     },
   },
   {
+    "context": "Editor",
     "bindings": {
-      "ctrl-!": "editor::ToggleFocus",
+      "ctrl-e ctrl-s": "editor::SortLinesCaseInsensitive",
     },
   },
   {
@@ -66,81 +68,21 @@
     },
   },
   {
-    "context": "Workspace",
-    "bindings": {
-      "ctrl-`": "workspace::ToggleLeftDock",
-    },
-  },
-  {
-    "bindings": {
-      "ctrl-alt-z": "terminal_panel::Toggle",
-    },
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "ctrl-alt-[": [
-        "workspace::DecreaseActiveDockSize",
-        {
-          "px": 0,
-        },
-      ],
-    },
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "ctrl-alt-]": [
-        "workspace::IncreaseActiveDockSize",
-        {
-          "px": 0
-        }
-      ]
-    }
-  },
-  {
-    "bindings": {
-      "f4": null
-    }
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "f5": null
-    }
-  },
-  {
-    "bindings": {
-      "ctrl-alt-shift-pageup": "workspace::MovePaneLeft"
-    }
-  },
-  {
-    "bindings": {
-      "ctrl-alt-shift-pagedown": "workspace::MovePaneRight"
-    }
-  },
-  {
     "context": "GitPicker",
     "bindings": {
-      "alt-1": null
-    }
+      "alt-1": null,
+    },
   },
   {
     "context": "RunModal",
     "bindings": {
-      "alt-1": null
-    }
+      "alt-1": null,
+    },
   },
   {
     "context": "Pane",
     "bindings": {
-      "alt-1": null
-    }
+      "alt-1": null,
+    },
   },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "alt-1": null
-    }
-  }
 ]
