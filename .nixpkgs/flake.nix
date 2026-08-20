@@ -74,8 +74,9 @@
             vscode
             uv
             pkgsUnstable.claude-code
+            pkgsUnstable.codex
             # I tried using zed for a while and it just isn't cutting it for me at the moment. Biggest problems:
-            #   - Very bad support for diffing current file with git history and two opened unsaved files. However, they have diffing selection with clipboard and diffing 2 selected files in the project pane.
+            #   - TODO: Very bad support for diffing current file with git history and two opened unsaved files. However, they have diffing selection with clipboard and diffing 2 selected files in the project pane.
             #   - DONE: Cannot move tabs between editor groups (see https://github.com/zed-industries/zed/discussions/14121).
             #   - DONE: Markdown rendered preview is really bad.
             pkgsUnstable.zed-editor
