@@ -24,6 +24,8 @@ Dotfiles setup:
   # This loads the environment variables and aliases used below
   exec zsh
 
+  mkdir $HOME/.local/state/nix/profiles
+
   # This installs only CLI tools
   np add ~/.nixpkgs#cli
 
