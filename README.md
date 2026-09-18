@@ -12,26 +12,23 @@ Dotfiles setup:
 
 ```bash
 # NB: use the https remote if you do not have a GitHub account
-(
-  set -ex
-  REMOTE=https://github.com/urbas/dotfiles.git
-  [ -d $HOME/.my-dotfiles ] || git clone --bare ${REMOTE:-git@github.com:urbas/dotfiles.git} $HOME/.my-dotfiles
-  git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME fetch
-  git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME reset $HOME
-  git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME checkout $HOME
-  git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME pull
+REMOTE=https://github.com/urbas/dotfiles.git
+[ -d $HOME/.my-dotfiles ] || git clone --bare ${REMOTE:-git@github.com:urbas/dotfiles.git} $HOME/.my-dotfiles
+git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME fetch
+git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME reset $HOME
+git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME checkout $HOME
+git --git-dir=$HOME/.my-dotfiles --work-tree=$HOME pull
 
-  # This loads the environment variables and aliases used below
-  exec zsh
+# This loads the environment variables and aliases used below
+exec zsh
 
-  mkdir $HOME/.local/state/nix/profiles
+mkdir -p $HOME/.local/state/nix/profiles
 
-  # This installs only CLI tools
-  np add ~/.nixpkgs#cli
+# This installs only CLI tools
+np add ~/.nixpkgs#cli
 
-  # This installs both CLI tools and GUI tools
-  np add ~/.nixpkgs#gui
-)
+# This installs both CLI tools and GUI tools
+np add ~/.nixpkgs#gui
 ```
 
 Change the fonts of your terminal to `Inconsolata for Powerline` (the fonts
