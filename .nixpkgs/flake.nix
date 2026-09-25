@@ -40,6 +40,7 @@
             gdu
             git
             glibcLocales
+            helix
             htop
             hyperfine
             jless
