@@ -52,7 +52,6 @@
             python3.pkgs.ipython
             ripgrep
             starship
-            tmux
             tree
             vim
             xclip
