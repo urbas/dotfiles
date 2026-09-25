@@ -49,18 +49,16 @@
       ],
     },
     "unbind": {
-      "alt-1": [
-        "workspace::ActivatePane",
-        0
-      ],
       "f5": "debugger::Rerun",
       "ctrl-t": "project_symbols::Toggle",
+      "ctrl-s": "workspace::Save",
     },
   },
   {
     "context": "Editor",
     "bindings": {
       "ctrl-e ctrl-s": "editor::SortLinesCaseInsensitive",
+      "ctrl-s": "workspace::Save",
     },
   },
   {
@@ -76,24 +74,17 @@
     },
   },
   {
-    "context": "GitPicker",
-    "unbind": {
-      "alt-1": "git_picker::ActivateBranchesTab"
-    }
-  },
-  {
-    "context": "RunModal",
-    "unbind": {
-      "alt-1": "new_process_modal::ActivateTaskTab"
-    }
-  },
-  {
-    "context": "Pane",
-    "unbind": {
-      "alt-1": [
-        "pane::ActivateItem",
-        0
-      ]
-    }
+    "context": "Terminal",
+    "bindings": {
+      "alt-1": ["terminal::SendKeystroke", "alt-1"],
+      "alt-2": ["terminal::SendKeystroke", "alt-2"],
+      "alt-3": ["terminal::SendKeystroke", "alt-3"],
+      "alt-4": ["terminal::SendKeystroke", "alt-4"],
+      "alt-5": ["terminal::SendKeystroke", "alt-5"],
+      "alt-6": ["terminal::SendKeystroke", "alt-6"],
+      "alt-7": ["terminal::SendKeystroke", "alt-7"],
+      "alt-8": ["terminal::SendKeystroke", "alt-8"],
+      "alt-9": ["terminal::SendKeystroke", "alt-9"],
+    },
   },
 ]

@@ -27,6 +27,9 @@
   },
   "ui_font_family": "Liberation Sans",
   "terminal": {
+    "env": {
+       "ZELLIJ": "", "ZELLIJ_SESSION_NAME": "",
+    },
     "font_size": 12.0,
     "font_family": "Roboto Mono",
   },
