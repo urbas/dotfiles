@@ -1,6 +1,6 @@
 {
   inputs.flake-utils.url = "github:numtide/flake-utils";
-  inputs.nixpkgs.url = "nixpkgs/nixos-25.11";
+  inputs.nixpkgs.url = "nixpkgs/nixos-26.05";
   inputs.nixpkgsMaster.url = "nixpkgs/master";
   inputs.nixpkgsUnstable.url = "nixpkgs/nixos-unstable";
 
@@ -57,6 +57,7 @@
             vim
             xclip
             yq
+            pkgsUnstable.zellij
             zsh
             zstd
           ];
@@ -82,7 +83,7 @@
             pkgsUnstable.zed-editor
           ];
 
-          devTools = with pkgs; [ nixfmt-rfc-style ];
+          devTools = with pkgs; [ nixfmt ];
 
           gui = pkgs.buildEnv {
             name = "gui";

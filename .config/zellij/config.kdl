@@ -1,0 +1,13 @@
+show_startup_tips false
+pane_frames false
+
+keybinds {
+    shared_except "pane" "locked" {
+        unbind "Ctrl p"
+        bind "Ctrl y" { SwitchToMode "Pane"; }
+    }
+    pane {
+        unbind "Ctrl p"
+        bind "Ctrl y" { SwitchToMode "Normal"; }
+    }
+}
