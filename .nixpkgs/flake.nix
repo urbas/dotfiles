@@ -38,6 +38,7 @@
             file
             fzf
             gdu
+            gh
             git
             glibcLocales
             helix
