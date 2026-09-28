@@ -1,10 +1,10 @@
 layout {
     pane
     pane size=1 split_direction="vertical" {
-        pane size="45%" borderless=true {
+        pane size="40%" borderless=true {
             plugin location="tab-bar"
         }
-        pane size="55%" borderless=true {
+        pane size="60%" borderless=true {
             plugin location="status-bar"
         }
     }
