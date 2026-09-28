@@ -54,29 +54,3 @@ should be already installed).
    dotfiles ci -m "bump nixpkgs"
    dotfiles push
    ```
-
-# Troubleshooting
-
-## How to change desktop shortcuts not configurable via Settings in ubuntu?
-
-Via dconf-editor under `/org/gnome/desktop/wm/keybindings/` (you can get rid of
-the `Ctrl+Alt+Shift+...` keybindings here).
-
-Install dconf-editor and run it:
-
-```bash
-nix shell github:NixOS/nixpkgs/nixos-23.11#gnome.dconf-editor
-dconf-editor
-```
-
-Answer from here: https://askubuntu.com/a/997267
-
-## Ctrl+Shift+e starts weird emoji typing
-
-You can unset this with:
-
-```bash
-ibus-setup
-```
-
-Look for emoji and delete the shortcut.
