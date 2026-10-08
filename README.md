@@ -31,7 +31,7 @@ np add ~/.nixpkgs#cli
 np add ~/.nixpkgs#gui
 ```
 
-Change the fonts of your terminal to `JetBrainsMono Nerd Font Mono` (installed
+Change the fonts of your terminal to `Inconsolata Nerd Font Mono` (installed
 by the `gui` profile; run `fc-cache -f` if it does not show up).
 
 # Upgrade dev env
