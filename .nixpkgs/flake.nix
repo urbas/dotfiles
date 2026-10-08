@@ -70,6 +70,7 @@
             gimp
             keepassxc
             libreoffice
+            nerd-fonts.jetbrains-mono
             shotwell
             steam
             vlc
