@@ -64,6 +64,7 @@
           ];
 
           guiTools = with pkgs; [
+            alacritty
             chromium
             deluge
             firefox
