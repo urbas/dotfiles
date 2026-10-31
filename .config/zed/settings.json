@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "ui_font_family": "DejaVu Sans",
   "cli_default_open_behavior": "new_window",
   "project_panel": {
     "dock": "left"
@@ -25,16 +26,12 @@
   "git_panel": {
     "dock": "left"
   },
-  "ui_font_family": "Liberation Sans",
   "terminal": {
     "env": {
        "ZELLIJ": "", "ZELLIJ_SESSION_NAME": "",
     },
-    "font_size": 12.0,
-    "font_family": "Roboto Mono",
   },
   "buffer_line_height": "comfortable",
-  "buffer_font_family": "Roboto Mono",
   "tab_size": 2,
   "inline_code_actions": true,
   "gutter": {
@@ -60,8 +57,6 @@
     "diagnostics": false,
     "metrics": false,
   },
-  "ui_font_size": 14.0,
-  "buffer_font_size": 12.0,
   "theme": {
     "mode": "system",
     "light": "Ayu Light",
