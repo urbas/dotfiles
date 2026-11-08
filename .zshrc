@@ -1,5 +1,7 @@
 setopt inc_append_history
 
+fpath=("$MY_HOME_PROFILE/share/zsh/site-functions" $fpath)
+
 # oh-my-zsh
 DISABLE_AUTO_UPDATE="true"
 plugins=(git ssh-agent)
